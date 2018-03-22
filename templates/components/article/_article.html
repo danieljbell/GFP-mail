@@ -1,20 +1,20 @@
-<!-- Article -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<!-- Single Product -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="product-listing-row" mc:repeatable="product_listing" mc:variant="Product Module - Border Bottom">
   <tr>
-    <td style="padding: 32px 0 0 0;" bgcolor="#ffffff" align="center">
+    <td style="padding: 30px 0 0 0;" align="center">
       <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
         <tr>
-          <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+          <td style="padding: 0 25px 0 25px;" align="center" valign="top">
             <!-- Two column -->
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="product-listing-container">
               <tr>
                 <td>
                   <!-- content left -->
                   <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="28%" align="left">
                     <tr>
                       <td align="center" valign="top">
-                        <a href="#" target="_blank">
-                          <img style="display: block; padding: 0 0 8px 0; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 84px;" class="img-max" src="http://outlinemail.co.uk/img/16x9-img-placeholder.png" alt="Outline Mail" width="150" height="84" border="0">
+                        <a href="@@productLink" target="_blank">
+                          <img style="display: block; padding: 0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #444444; font-size: 14px; width: 100px; height: 100px;" src="@@productImage" alt="@@productName" width="100" height="100" border="0" mc:edit="product_module_border_bottom_image">
                         </a>
                       </td>
                     </tr>
@@ -26,25 +26,109 @@
                       <td valign="top">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
-                            <td style="padding: 0 0 8px 0; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 20px; font-weight: normal; line-height: 30px;" align="left">
-                              A growing community for email professionals
+                            <td style="padding: 0; color: #444444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 18px;" align="left" class="product-listing--product-name" mc:edit="product_module_border_bottom_name">
+                              <a href="@@productLink" style="color: #377D3D; font-weight: bold; text-decoration: none;">@@productName</a>
                             </td>
                           </tr>
                           <tr>
-                            <td style="padding: 0 0 16px 0; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;" align="left">
-                              Share knowledge, ask code questions, and learn from a growing library of articles on all things email.
+                            <td style="padding: 10px 0; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 18px;" align="left" class="product-listing--product-price" mc:edit="product_module_border_bottom_price">
+                              <del style="color: #888888;">$@@productPrice</del> <strong style="color: #ff0000;">See Price In Cart</strong>
                             </td>
                           </tr>
                           <tr>
-                            <td style="padding: 0 0 32px 0;">
+                            <td style="padding: 0 0 10px 0; color: #888888; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="left" mc:edit="product_module_border_bottom_fitment">
+                              Fits Models: @@productFitment
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 30px 0;">
                               <!-- Button -->
                               <table border="0" cellspacing="0" cellpadding="0" width="100%">
                                 <tr>
                                   <td align="left">
                                     <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
                                       <tr>
-                                        <td align="center">
-                                          <a class="mobile-button" style="background-color: #fcee21; border-top: 8px solid #fcee21; border-right: 16px solid #fcee21; border-bottom: 8px solid #fcee21; border-left: 16px solid #fcee21; display: inline-block; color: #333333; font-family: Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 24px; text-decoration: none;" href="http://outlinemail.co.uk" target="_blank">Get started &#8594;</a>
+                                        <td align="center" mc:edit="product_module_border_bottom_CTA">
+                                          <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="@@productLink" target="_blank">Add to Cart</a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                              <!-- /Button -->
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content right -->
+                </td>
+              </tr>
+            </table>
+            <hr style="display: @@hasBorder;">
+            <!-- /Two column -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Single Product -->
+
+<!-- Single Product -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="product-listing-row" mc:repeatable="product_listing" mc:variant="Product Module - No Border">
+  <tr>
+    <td style="padding: 30px 0 0 0;" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding: 0 25px 0 25px;" align="center" valign="top">
+            <!-- Two column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" class="product-listing-container">
+              <tr>
+                <td>
+                  <!-- content left -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="28%" align="left">
+                    <tr>
+                      <td align="center" valign="top">
+                        <a href="@@productLink" target="_blank">
+                          <img style="display: block; padding: 0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #444444; font-size: 14px; width: 100px; height: 100px;" src="@@productImage" alt="@@productName" width="100" height="100" border="0" mc:edit="product_module_no_border_image">
+                        </a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content left -->
+                  <!-- content right -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="70%" align="right">
+                    <tr>
+                      <td valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td style="padding: 0; color: #444444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: normal; line-height: 18px;" align="left" class="product-listing--product-name" mc:edit="product_module_no_border_name">
+                              <a href="@@productLink" style="color: #377D3D; font-weight: bold; text-decoration: none;">@@productName</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 10px 0; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 18px;" align="left" class="product-listing--product-price" mc:edit="product_module_no_border_price">
+                              <del style="color: #888888;">@@productPrice</del> <strong style="color: #ff0000;">See Price In Cart</strong>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 10px 0; color: #888888; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="left" mc:edit="product_module_no_border_fitment">
+                              Fits Models: @@productFitment
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 30px 0;">
+                              <!-- Button -->
+                              <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                  <td align="left">
+                                    <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
+                                      <tr>
+                                        <td align="center" mc:edit="product_module_no_border_CTA">
+                                          <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="@@productLink" target="_blank">Add to Cart</a>
                                         </td>
                                       </tr>
                                     </table>
@@ -69,4 +153,4 @@
     </td>
   </tr>
 </table>
-<!-- /Article -->
+<!-- /Single Product -->
