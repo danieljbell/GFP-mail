@@ -42,6 +42,10 @@
       line-height: inherit !important;
     }
 
+    a {
+      color: #377D3D;
+    }
+
     .hero-tag p {
         color: #377D3D;
         background-color: #ffffff;
@@ -69,13 +73,12 @@
       margin: 0;;
     }
 
-    .promocode {
-      background-color: #fff;
+    .couponCode {
+      border: 2px solid #BCD331;
       display: inline-block;
-      padding: 4px 2px;
-      margin: 0 2px;
+      padding: 0px 6px;
       font-weight: bold;
-      color: #377D3D;
+      color: #555555;
     }
 
     .mobile-button {
@@ -148,9 +151,9 @@
         padding-top: 25px !important;
       }
         
-      .hero-title,
-      .hero-tag {
-        text-align: center;
+      .hero-table-cell {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
       }
 
       .hero-title h1 {
@@ -201,12 +204,12 @@
       <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
         <tr>
           <td style="padding: 0; background-color: #ffffff; border: 1px solid #cccccc;" valign="top">
-          @@include('hero/_hero-img-title-text-cta-centre.html')
+          @@include('hero/_hero-img-text.html')
 
           <!-- One up -->
           <table border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable>
             <tr>
-              <td style="padding: 10px 0; background-color: #cccccc;" align="center">
+              <td style="padding: 30px 0;" align="center">
                 <table border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tr>
                     <td align="center">
@@ -216,8 +219,23 @@
                             <!-- content -->
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                               <tr>
-                                <td align="center" style="padding: 0 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 14px;">
-                                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif;" mc:edit="promoCodeBar" class="promoCodeBar">Use Promo Code <span class="promocode">CLEANCUT</span> at Checkout</p>
+                                <td align="left" style="padding: 0 0 15px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;">
+                                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; margin: 0; padding: 0;">We’re all team players here, and to show our gratitude we want to offer <strong>10% off</strong> your next order at <a href="https://greenfarmparts.com" target="_blank">GreenFarmParts</a>.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="left" style="padding: 0 0 15px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;">
+                                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; margin: 0; padding: 0;">Use coupon code <span class="couponCode">ThankYou10</span> on your next order with <a href="https://greenfarmparts.com" target="_blank">GreenFarmParts</a>. Offer good thru July 3rd, 2018.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="left" style="padding: 0 0 25px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;">
+                                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; margin: 0; padding: 0;">Thanks for playing and being a part of the GreenFarmParts family. We really appreciate your business.</p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align="left" style="padding: 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;">
+                                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; margin: 0; padding: 0;">Sincerely,<br />The Green Farm Parts Team</p>
                                 </td>
                               </tr>
                             </table>
@@ -232,20 +250,6 @@
           </table>
           <!-- /One up -->
 
-          @@include('article/_article.html', {
-            "productName": "Some Name",
-            "productLink": "https://greenfarmparts.com",
-            "productCode": "AM141041",
-            "productPrice": "63.57",
-            "productImage": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/fff7cf46-3e2e-4d8e-abde-9989d1c3865f.jpg",
-            "productFitment": "D130",
-            "hasBorder": "block"
-          })
-          @@include('one-up/_one-up.html', {
-            "moduleClass": "promoFooter",
-            "bgImage": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/3bdffc68-f1ca-4e15-beea-c0055800737c.jpg",
-            "moduleLink": "https://greenfarmparts.com"
-          })
         </tr>
       </table>
     </td>
