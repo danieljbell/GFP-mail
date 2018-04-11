@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Green Farm Parts - Order Confirmation</title>
+  <title>Green Farm Parts - Shipment Confirmation</title>
   <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -58,8 +58,25 @@
       padding-top: 0;
     }
 
+    .hero-overlay-button-wrapper,
+    .mobile-button {
+      transition: all 250ms ease-in-out;
+    }
+
+    .hero-overlay-button-wrapper:hover,
+    .mobile-button:hover {
+      background-color: #8fa226 !important;
+      border-color: #8fa226 !important;
+    }
+
     /* Outline styles */
     @media only screen and (max-width: 599px) {
+      .one-up td[style="padding: 0 50px 0 50px;"],
+      .order-details td[style="padding: 0 50px 0 50px;"] {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
       .content-table {
         width: 100% !important;
       }
@@ -74,9 +91,14 @@
         width: 100% !important;
       }
 
+      .hide-on-mobile {
+        display: none;
+      }
+
       a[class="mobile-button"]{
         width: 100% !important;
-        padding: 8px !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
         border: 0 !important;
         box-sizing: border-box;
       }
@@ -112,7 +134,7 @@
 
 <!-- hidden preheader text - Remember to change it! -->
 <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;mso-hide:all;">
-  Thanks $(Bill_FirstName) for your order! Your order number is $(OrderNo).
+  Good News [Recipient Name]! Your GreenFarmParts order #[Order #] has shipped via [Carrier Name]!
 </div>
 
 <!-- Background -->
@@ -159,17 +181,17 @@
                   <!-- content -->
                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                      <td class="hero-table-cell" background="https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg" bgcolor="#777777" valign="top" style="color: #ffffff; background-color: #777777; background-image: url(https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg); background-size: cover; background-repeat: no-repeat; background-position: top left;" align="center">
+                      <td colspan="3" class="hero-table-cell" background="https://greenfarmparts.com/v/vspfiles/images/email/shipping-hero-main.jpg" bgcolor="#777777" valign="top" style="color: #ffffff; background-color: #777777; background-image: url(https://greenfarmparts.com/v/vspfiles/images/email/shipping-hero-main.jpg); background-size: cover; background-repeat: no-repeat; background-position: top left;" align="center">
                         <!--[if gte mso 9]>
                           <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:450;">
-                            <v:fill type="frame" src="https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg" color="#777777" />
+                            <v:fill type="frame" src="https://greenfarmparts.com/v/vspfiles/images/email/shipping-hero-main.jpg" color="#777777" />
                               <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
                         <![endif]-->
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
                             <td style="padding: 50px;" align="center">
-                              <h1 style="text-align: center; color: #ffffff; margin: 0 0 5px; padding: 0; font-size: 24px; line-height: 28px; text-shadow: 3px 3px 5px #444444">Thanks $(Bill_FirstName) for your order!</h1>
-                              <p style="text-align: center; color: #ffffff; margin: 0; padding: 0; font-size: 18px; line-height: 20px; text-shadow: 3px 3px 5px #444444">Your order number is $(OrderNo)</p>
+                              <h1 style="text-align: center; color: #ffffff; margin: 0 0 5px; padding: 0; font-size: 24px; line-height: 28px; text-shadow: 3px 3px 5px #444444">Your Order Has Shipped!</h1>
+                              <p style="text-align: center; color: #ffffff; margin: 0; padding: 0; font-size: 18px; line-height: 20px; text-shadow: 3px 3px 5px #444444">Order #[Order #] is on the way</p>
                             </td>
                           </tr>
                         </table>
@@ -177,6 +199,29 @@
                             </v:textbox>
                           </v:rect>
                         <![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="hide-on-mobile">
+                        <a href="#0">
+                          <img src="https://greenfarmparts.com/v/vspfiles/images/email/shipping-hero-bottom-left.jpg" alt="">
+                        </a>
+                      </td>
+                      <td align="center" style="width: 214px;background-color: #BCD331;" class="hero-overlay-button-wrapper">
+                        <!-- Button -->
+                        <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                          <tbody>
+                            <tr>
+                              <td align="center"><a class="mobile-button" href="[TrackingUrl]" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Track My Package</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!-- /Button -->
+                      </td>
+                      <td align="center" class="hide-on-mobile">
+                        <a href="#0">
+                          <img src="https://greenfarmparts.com/v/vspfiles/images/email/shipping-hero-bottom-right.jpg" alt="">
+                        </a>
                       </td>
                     </tr>
                   </table>
@@ -198,7 +243,7 @@ SPACER
 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-        <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 10px;" height="10">
+        <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
         </td>
     </tr>
 </table>
@@ -208,52 +253,112 @@ SPACER
 =====================
 -->
 
-                  <!-- Two up title text -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
   <tr>
-    <td style="padding: 20px 0 0 0;" bgcolor="#ffffff" align="center">
-      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
         <tr>
-          <td style="padding: 0 25px 0 25px;" align="center" valign="top">
-            <!-- Two column -->
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
               <tr>
-                <td>
-                  <!-- content left -->
-                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
+                <td style="padding: 0 50px 0 50px;" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                      <td>
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tr>
-                            <td style="padding: 10px; background-color: #377D3D; border-right: 1px solid #377D3D; color: #ffffff; font-size: 14px; font-weight: normal; line-height: 14px; font-weight: bold;" align="left">
-                              Billing Information
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="background-color: #f0f0f0; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; color: #444444; font-size: 14px; font-weight: normal; line-height: 18px; padding: 10px;" align="left">
-                              <p style="color: #444444; font-size: 16px; line-height: 20px; margin: 0; padding: 0;"><strong>$(Bill_FirstName) $(Bill_LastName)</strong></p>
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(Bill_Address1)<br>$(Bill_Address2)</p>
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(Bill_City), $(Bill_State) $(Bill_PostalCode)</p> 
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(Bill_PhoneNumber)</p>
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(EmailAddress)</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="background-color: #f0f0f0; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc; color: #777777; font-size: 14px; font-weight: normal; line-height: 18px; padding: 10px;" align="left">
-                              <hr>
-                              <p style="color: #444444; font-size: 16px; line-height: 20px; margin: 15px 0 0; padding: 0;"><strong>Payment Info:</strong></p>
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(DisplayPaymentMethod)</p>
-                            </td>
-                          </tr>
-                        </table>
+                      <td align="left" style="padding: 0 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 24px; margin: 0; padding: 0;">Dear [Recipient Name],</p>
                       </td>
                     </tr>
                   </table>
-                  <!-- /content left -->
-                  <!-- content right -->
-                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 15px;" height="15">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 50px 0 50px;" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                      <td>
+                      <td align="left" style="padding: 0 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 24px; margin: 0; padding: 0;">Thank you for your order from GreenFarmParts! We wanted to let you know that your order (#[Order #]) was shipped via [Carrier Name], [Shipping Service] on [Ship Date]. Your tracking number is: [Tracking #]</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="order-details">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0 50px 0 50px;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0 0 0 0; color: #333333; font-size: 16px; font-weight: normal; line-height: 24px;">
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
                             <td style="padding: 10px; background-color: #377D3D; border-right: 1px solid #377D3D; color: #ffffff; font-size: 14px; font-weight: normal; line-height: 14px; font-weight: bold;" align="left">
@@ -261,36 +366,24 @@ SPACER
                             </td>
                           </tr>
                           <tr>
-                            <td style="background-color: #f0f0f0; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; color: #444444; font-size: 14px; font-weight: normal; line-height: 18px; padding: 10px;" align="left">
-                              <p style="color: #444444; font-size: 16px; line-height: 20px; margin: 0; padding: 0;"><strong>$(Ship_FirstName) $(Ship_LastName)</strong></p>
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(Ship_Address1)<br>$(Ship_Address2)</p>
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(Ship_City), $(Ship_State) $(Ship_PostalCode)</p> 
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(Ship_PhoneNumber)</p>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="background-color: #f0f0f0; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc; color: #777777; font-size: 14px; font-weight: normal; line-height: 18px; padding: 10px;" align="left">
-                              <hr>
-                              <p style="color: #444444; font-size: 16px; line-height: 20px; margin: 15px 0 0; padding: 0;"><strong>Shipping Method:</strong></p>
-                              <p style="color: #777777; font-size: 14px; line-height: 18px; margin: 0; padding: 0;">$(ShippingMethod)</p>
+                            <td class="order-details-table" style="background-color: #f0f0f0; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc; border-bottom: 1px solid #cccccc;  color: #444444; font-size: 14px; font-weight: normal; line-height: 18px; padding: 10px;" align="left">
+                              [Recipient Address]
                             </td>
                           </tr>
                         </table>
                       </td>
                     </tr>
                   </table>
-                  <!-- /content right -->
                 </td>
               </tr>
             </table>
-            <!-- /Two column -->
           </td>
         </tr>
       </table>
     </td>
   </tr>
 </table>
-<!-- /Two up title text -->
+<!-- /One up -->
 
                   <!--
 =====================
@@ -365,35 +458,6 @@ SPACER
 /SPACER
 =====================
 -->
-
-                  <!-- One up -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-  <tr>
-    <td style="padding: 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="left">
-            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 0 50px 0 50px;" align="left" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="left" style="padding: 0 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 24px; margin: 0; padding: 0;">@@copy</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- /One up -->          
 
                   <!--
 =====================
