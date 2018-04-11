@@ -112,7 +112,7 @@
 
 <!-- hidden preheader text - Remember to change it! -->
 <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;mso-hide:all;">
-  $(Bill_FirstName) $(Bill_LastName) placed an order!
+  Thanks $(Bill_FirstName) for your order! Your order number is $(OrderNo).
 </div>
 
 <!-- Background -->
@@ -132,7 +132,7 @@
 
                   @@include('hero/_hero-img-text.html', {
                     "bgImg": "https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg",
-                    "heroTitle": "Thanks $(Bill_FirstName) for you order!",
+                    "heroTitle": "Thanks $(Bill_FirstName) for your order!",
                     "heroSubtitle": "Your order number is $(OrderNo)"
                   })
 
