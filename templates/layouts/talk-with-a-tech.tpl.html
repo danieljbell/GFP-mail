@@ -42,13 +42,31 @@
       line-height: inherit !important;
     }
 
+    .footer-utility-links {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .footer-utility-links li {
+        margin-bottom: 2px;
+    }
+
+    .footer-utility-links a {
+        text-decoration: none;
+        color: #377D3D;
+    }
+
+    .footer-utility-links a:hover {
+        text-decoration: underline;
+    }
+
     a {
       color: #377D3D;
     }
 
     .hero-table-cell {
       background-color: #377D3D;
-      background-image: url("https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg");
+      background-image: url("https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/334770ac-4e88-4444-b877-f1f0651b8b5b.jpg");
     }
 
     .order-details-table table td {
@@ -79,6 +97,15 @@
       .one-up td[style="padding: 0 35px 0 35px;"] {
         padding-left: 15px !important;
         padding-right: 15px !important;
+      }
+
+      .answer-image {
+        width: 100% !important;
+      }
+
+      .answer-image td {
+        padding-left: 0 !important;
+        text-align: center;
       }
 
       .content-table {
@@ -167,7 +194,7 @@
                   })
 
                   @@include('one-up/_one-up.html', {
-                    "copy": "We sat down and asked some of our service professionals what they typically see with belts and what a proper maintenance and replacement schedule look like. Here are some quick tips on things you can do to keep your belts running in top condition."
+                    "copy": "We sat down and asked some of our service technicians for a few quick tips on things you can do to keep your belts running in top condition."
                   })
 
                   @@include('misc/_spacer.html', {
@@ -175,11 +202,12 @@
                   })
 
                   @@include('one-up/_one-up--question.html', {
-                    "copy": "Question 1"
+                    "copy": "Inspect the belt for cracks"
                   })
 
-                  @@include('one-up/_one-up--answer.html', {
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quibusdam iusto in sunt rem illo autem, magni numquam impedit. Modi?"
+                  @@include('one-up/_one-up--answer-with-image.html', {
+                    "copy": "When inspecting the belt you may want to remove it from your machine to get it into good lighting conditions to be able to check it for cracks. When the belt is under tension it may close the cracks and they will be hard to detect while on the machine. You may also notice small cracks developing from dry conditions that can be caused by too much exposure to sun light.",
+                    "img": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/28732860-3098-496c-96d8-e59d434df32b.jpg"
                   })
 
                   @@include('misc/_spacer.html', {
@@ -187,11 +215,12 @@
                   })
 
                   @@include('one-up/_one-up--question.html', {
-                    "copy": "Question 2"
+                    "copy": "Inspect the belt for fraying"
                   })
 
-                  @@include('one-up/_one-up--answer.html', {
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, aut dolorem eaque reprehenderit, deserunt ab blanditiis odio ea quaerat! Culpa dolorem voluptates est, exercitationem tempora? Doloribus suscipit, ut quis dicta cupiditate esse cumque. Blanditiis, nostrum."
+                  @@include('one-up/_one-up--answer-with-image.html', {
+                    "copy": "Fraying can be caused by many conditions. Examples include an old belt that is nearing the end of its wear life, there is debris that is rubbing on the belt while in operation, or you have a idler pulley that is not operating correctly and is adding excessive heat to the belt from added friction.",
+                    "img": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/6e8c6196-ebf5-4393-a336-eca876d25d26.jpg"
                   })
 
                   @@include('misc/_spacer.html', {
@@ -200,7 +229,7 @@
 
                   @@include('one-up/_one-up--image-only.html', {
                     "Link": "https://www.greenfarmparts.com/John-Deere-John-Deere-Belts-s/645.htm",
-                    "Image": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/928ef377-a4b2-497f-a702-fbec1d01d045.jpg",
+                    "Image": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/93b4cd61-9224-4a0d-83e0-0cc10722ef0e.jpg",
                     "AltText": "Save 10% on Belts sitewide. Click to shop now",
                     "Heightpx": "175",
                     "Widthpx": "530"
@@ -211,23 +240,12 @@
                   })
 
                   @@include('one-up/_one-up--question.html', {
-                    "copy": "Question 3"
+                    "copy": "How do I extend the life of my belts?"
                   })
 
-                  @@include('one-up/_one-up--answer.html', {
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, doloribus!"
-                  })
-
-                   @@include('misc/_spacer.html', {
-                    "space": "25"
-                  })
-
-                  @@include('one-up/_one-up--question.html', {
-                    "copy": "Question 4"
-                  })
-
-                  @@include('one-up/_one-up--answer.html', {
-                    "copy": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis molestias molestiae aut, optio accusantium asperiores ducimus, labore perspiciatis omnis est ex perferendis alias vitae nam."
+                  @@include('one-up/_one-up--answer-with-image.html', {
+                    "copy": "The best approach to damage prevention is to keep the top surface of your deck clear of debris such as sticks, leaves and excessive grass clippings.  Another key element is proper operation of all idler pulleys. Making sure the idler pulleys operate freely and have no damage to the pulley surface that the belt is in contact with will prevent damage to the belt. ",
+                    "img": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/d5132844-3e5b-4ffc-8bb5-5b1c4c043228.jpg"
                   })
 
                    @@include('misc/_spacer.html', {
@@ -258,6 +276,8 @@
             </td>
           </tr>
         </table>
+
+        @@include('footer/_footer-logo-links.html')
 
         @@include('misc/_spacer.html', {
           "space": "50"
