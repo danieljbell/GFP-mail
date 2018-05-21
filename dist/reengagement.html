@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>*|MC:SUBJECT|*</title>
+  <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a { padding: 0; }
+    .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass * { line-height: 100%; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode:bicubic; }
+    /* RESET STYLES */
+    body { height:100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    /* Remove margin on email wrapper in Android 4.4 KitKat */
+    /* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
+    div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+
+    * {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+    }
+
+    hr {
+        background: transparent;
+        border: 0;
+        border-top: 1px solid #cccccc;
+    }
+
+    a {
+      color: #377D3D;
+    }
+
+    /* Remove ios blue links */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    .hide-on-desktop {
+      display: none !important;
+      width: 0px !important;
+      height:  0px !important;
+      overflow: hidden !important;
+      line-height:  0px !important;
+      font-size: 0px !important;
+    }
+
+    .footer-utility-links {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .footer-utility-links li {
+        margin-bottom: 2px;
+    }
+
+    .footer-utility-links a {
+        text-decoration: none;
+        color: #377D3D;
+    }
+
+    .footer-utility-links a:hover {
+        text-decoration: underline;
+    }
+
+    .hero-table-cell {
+      background-color: #377D3D;
+      background-image: url("https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg");
+    }
+
+    .order-details-table table td {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    .order-details-table table tr:first-child td {
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    .hero-overlay-button-wrapper,
+    .mobile-button {
+      transition: all 250ms ease-in-out;
+    }
+
+    .hero-overlay-button-wrapper:hover,
+    .mobile-button:hover {
+      background-color: #8fa226 !important;
+      border-color: #8fa226 !important;
+    }
+
+    .templateColumnContainer{
+      width:200px;
+    }
+
+    .leftColumnContent,
+    .centerColumnContent,
+    .rightColumnContent {
+      text-align: center;
+      padding-top:0;
+      padding-right:20px;
+      padding-bottom:20px;
+      padding-left:20px;
+    }
+
+    .leftColumnContent img, 
+    .rightColumnContent img{
+        display:inline;
+        height:auto;
+        max-width:260px;
+    }
+
+    /* Outline styles */
+    @media only screen and (max-width: 599px) {
+      .templateColumnContainer{
+        display:block !important;
+        width:100% !important;
+      }
+
+      .leftColumnContent img,
+      .centerColumnContent img, 
+      .rightColumnContent img{
+          display:block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      td[style*="padding: 10px 50px;"],
+      td[style="padding: 0 50px;"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .three-up-centre td[style="padding: 0 20px 0 40px"],
+      .three-up-centre td[style="padding: 0 20px 0 20px"],
+      .three-up-centre td[style="padding: 0 40px 0 20px"] {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+
+      .content-table {
+        width: 100% !important;
+      }
+
+      .two-up-button-centre--headline {
+        width: 100% !important;
+      }
+
+      img[class="img-max"]{
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      table[class="mobile-button-wrap"]{
+        margin: 0 auto;
+        width: 100% !important;
+      }
+
+      .hide-on-mobile {
+        display: none !important;
+      }
+
+      .hide-on-desktop {
+        display: block !important;
+        max-height:  none !important;
+        max-width: 100% !important;
+        line-height: 1.5 !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      a[class="mobile-button"]{
+        width: 100% !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0 !important;
+        box-sizing: border-box;
+      }
+
+      .mobile-align-center {
+        text-align: center !important;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .email-header .content-table td {
+        padding-top: 25px !important;
+      }
+
+      .hero-table-cell table td {
+        padding: 50px 25px !important;
+      }
+
+      .hero-overlay-button-wrapper {
+        width: 100% !important;
+      }
+
+    }
+  </style>
+  
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, h1, h2, h3, h4, h5, h6,  ul, li, font, span, strong {
+        font-family: Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important; background-color: #f0f0f0;">
+
+<!-- hidden preheader text - Remember to change it! -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;mso-hide:all;">
+  *|MC_PREVIEW_TEXT|*
+</div>
+
+<!-- Background -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#f0f0f0" align="center">
+        
+        <!-- Header -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="email-header">
+  <tr>
+    <td align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding: 50px 0 25px;" align="center" valign="top">
+            <a href="https://greenfarmparts.com">
+              <img style="display: block" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/84c255e8-00f1-44a3-9962-9213a077f4d8.png" width="280" height="64" border="0" alt="Green Farm Parts">
+            </a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Header -->
+        
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                <tr>
+                  <td style="padding: 0; background-color: #ffffff; border: 1px solid #cccccc;" valign="top">
+                  
+
+                  <!-- One up -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center">
+      <a href="https://greenfarmparts.com" target="_blank">
+        <img class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600; height: 220; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 220;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/adab0e8a-e12d-4380-82be-d8913c1b7231.jpg" alt="The Right Part At The Right Price">
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- /One up -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Dear *|FNAME|*,</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Looks like it’s been a little while since we’ve seen you, so we’d like to reintroduce ourselves. Here at <a href="https://greenfarmparts.com" target="_blank">GreenFarmParts</a>, our purpose is to bring you the right part at the right price. As a thank you for staying in touch, we’d like to offer you <strong>15% off your next order</strong>. Use promo code <a href="https://greenfarmparts.com" target="_blank"  style="display: inline-block; background-color: green; color: #ffffff; padding: 2px 8px; font-weight: bold; text-decoration: none;">WELCOMEBACK15</a> when checking out.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- Three up centre -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="three-up-centre">
+  <tr>
+    <td style="padding: 25px 0 0 0;" bgcolor="#BCD331" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding-bottom: 15px;">
+            <h4 style="text-align: center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; margin: 0; padding: 0;">Why GreenFarmParts?</h4>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            <!-- Three column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center">
+                  <!-- Column 1 -->
+                  <!--[if mso]><table border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="200" align="left"><![endif]-->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
+                    <tr>
+                      <td style="padding: 0 20px 0 40px" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/c9c53e3a-6497-46ce-b257-4ce7b5cd1fb3.png" alt="Outline Mail" width="100" height="100" border="0">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 4px 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 20px;" align="center">
+                              500,000+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 20px 0; color: #F5F8E0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center">
+                              parts available across 5 different brands
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Column 1 -->
+                  <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                  <!-- Column 2 -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
+                    <tr>
+                      <td style="padding: 0 20px 0 20px" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/feb54e5a-777d-4b1e-ad49-dc5d331c6401.png" alt="Outline Mail" width="100" height="100" border="0">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 4px 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 20px;" align="center">
+                              FREE SHIPPING
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 20px 0; color: #F5F8E0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center">
+                              on all non-oversided products
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Column 2 -->
+                  <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                  <!-- Column 3 -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="right">
+                    <tr>
+                      <td style="padding: 0 40px 0 20px" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/493fb304-b4d0-4ba5-aebc-0a218cdbec96.png" alt="Outline Mail" width="100" height="100" border="0">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 4px 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 20px;" align="center">
+                              GOOD DEALS
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 20px 0; color: #F5F8E0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center">
+                              parts priced for the best deals
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Column 3 -->
+                  <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding: 0 25px;">
+            <!-- Button -->
+            <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+              <tbody>
+                <tr>
+                  <td align="center"><a class="mobile-button" href="https://greenfarmparts.com" style="background-color: #377D3D; border-top: 15px solid #377D3D; border-right: 25px solid #377D3D; border-bottom: 15px solid #377D3D; border-left: 25px solid #377D3D; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop Our 500,000+ Products</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- /Button -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#BCD331" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Three up centre -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">You can convienetly shop our store by your specific part type or specific piece of equipment. And if that’s not working for you, a simple site search gets the part you need a click away.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">If you need help, we’re just a phone call, email, or webchat away to help answer any question you might have.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- Three up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 0;" bgcolor="#ffffff" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td align="center" valign="top" style="padding: 0 50px;">
+            <!-- Two up button centre -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 0; border: 1px solid #cccccc;" bgcolor="#f0f0f0" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td style="padding: 25px 25px 10px;" align="center" valign="top">
+            <table cellpadding="0" cellspacing="0" width="350" class="two-up-button-centre--headline">
+              <tbody>
+                <tr>
+                  <td align="center" style="padding-bottom: 20px;">
+                    <h2 style="margin: 0; padding: 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 24px;">Interested in Some Free Gear?</h2>
+                    <p style="margin: 0; padding: 0; color: #888888; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 16px;">Receive a set of 4 bottle or can koozies, absolutely free, when you use either promo code below.</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- Two column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- content left -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <a href="https://www.greenfarmparts.com" target="_blank">
+                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/d8931b8e-26eb-427b-82ea-840d057133e7.jpg" alt="Can Koozie" width="150" height="150" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px;" align="center">
+                              CAN4
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content left -->
+                  <!-- content right -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <a href="https://www.greenfarmparts.com" target="_blank">
+                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/af9f05e2-d5cc-4990-b717-3a4520ab2df5.jpg" alt="Bottle Koozie" width="150" height="150" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px;" align="center">
+                              BOTTLE4
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content right -->
+                </td>
+              </tr>
+            </table>
+            <!-- /Two column -->
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding: 0 25px;">
+            <!-- Button -->
+            <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+              <tbody>
+                <tr>
+                  <td align="center"><a class="mobile-button" href="https://greenfarmparts.com" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">I Want Cold Drinks!</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- /Button -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#f0f0f0" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Two up button centre -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Three up -->
+
+
+
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">From all of us here at GreenFarmParts, we look forward to getting you the right part at the right price.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Sincerely,<br />The GreenFarmParts Team</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- One up -->
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td align="center">
+      <a href="https://zglidesuspension.com" target="_blank">
+        <img class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600px; height: 152px; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 152px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/497bb65d-f1fe-4e92-a7ab-fc4ab9c80b21.jpg" alt="Smooth Out Your Ride With ZGlide - Click For More">
+      </a>
+    </td>
+  </tr>
+</table>
+
+<!-- /One up -->
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- footer logo links -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 30px 0 0 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="center">
+            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 0;" align="center" valign="top">
+                  <!-- Two column -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td>
+                        <!-- logo left -->
+                        <table class="content-table" border="0" cellpadding="0" cellspacing="0" align="left">
+                          <tr>
+                            <td style="padding-bottom: 16px;">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td class="mobile-align-center" style="color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 12px;" align="left">
+                                     *|IF:LIST|*
+                                      <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                      <br>
+                                      <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                        *|LIST:DESCRIPTION|*
+                                        <br>
+                                        <strong>Our mailing address is:</strong>
+                                        <br> *|HTML:LIST_ADDRESS_HTML|*
+                                        <br>
+                                      <!-- *|END:IF|* -->
+                                    *|ELSE:|*
+                                      <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                        <em>Copyright &copy; *|CURRENT_YEAR|* *|USER:COMPANY|*, All rights reserved.</em>
+                                        <br>
+                                        <strong>Our mailing address is:</strong>
+                                        <br> *|USER:ADDRESS_HTML|*
+                                      <!-- *|END:IF|* -->
+                                    *|END:IF|*
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- /logo left -->
+                        <!-- content right -->
+                        <table class="content-table" border="0" cellpadding="0" cellspacing="0" align="right">
+                          <tr>
+                            <td style="padding-bottom: 16px;">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                <tr>
+                                  <td class="mobile-align-center" style="color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: normal; line-height: 12px;" align="right">
+                                    <ul class="footer-utility-links">
+                                      <li><a href="*|UNSUB|*" class="utilityLink">unsubscribe from this list</a></li>
+                                      <li><a href="*|UPDATE_PROFILE|*" class="utilityLink">update subscription preferences</a></li>
+                                      <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                        <li><a href="*|ARCHIVE|*" class="utilityLink">view email in browser</a></li>
+                                      <!-- *|END:IF|* -->
+                                    </ul>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!-- /content right -->
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Two column -->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /footer logo links -->
+
+        <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
