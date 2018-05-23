@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Green Farm Parts - Order Confirmation</title>
+  <title>*|MC:SUBJECT|*</title>
   <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,6 +32,10 @@
         border-top: 1px solid #cccccc;
     }
 
+    a {
+      color: #377D3D;
+    }
+
     /* Remove ios blue links */
     a[x-apple-data-detectors] {
       color: inherit !important;
@@ -40,6 +44,33 @@
       font-family: inherit !important;
       font-weight: inherit !important;
       line-height: inherit !important;
+    }
+
+    .hide-on-desktop {
+      display: none !important;
+      width: 0px !important;
+      height:  0px !important;
+      overflow: hidden !important;
+      line-height:  0px !important;
+      font-size: 0px !important;
+    }
+
+    .footer-utility-links {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .footer-utility-links li {
+        margin-bottom: 2px;
+    }
+
+    .footer-utility-links a {
+        text-decoration: none;
+        color: #377D3D;
+    }
+
+    .footer-utility-links a:hover {
+        text-decoration: underline;
     }
 
     .hero-table-cell {
@@ -56,6 +87,17 @@
       border-bottom: 1px solid #cccccc;
       padding-bottom: 0;
       padding-top: 0;
+    }
+
+    .hero-overlay-button-wrapper,
+    .mobile-button {
+      transition: all 250ms ease-in-out;
+    }
+
+    .hero-overlay-button-wrapper:hover,
+    .mobile-button:hover {
+      background-color: #8fa226 !important;
+      border-color: #8fa226 !important;
     }
 
     .templateColumnContainer{
@@ -79,24 +121,6 @@
         max-width:260px;
     }
 
-    .footer-utility-links {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .footer-utility-links li {
-        margin-bottom: 2px;
-    }
-
-    .footer-utility-links a {
-        text-decoration: none;
-        color: #377D3D;
-    }
-
-    .footer-utility-links a:hover {
-        text-decoration: underline;
-    }
-
     /* Outline styles */
     @media only screen and (max-width: 599px) {
       .templateColumnContainer{
@@ -112,12 +136,24 @@
           margin-right: auto;
       }
 
-      td[style*="padding: 0 50px 0 50px;"],
-      td[style*="padding: 0 50px;"] {
-        padding: 0 20px !important;
+      td[style*="padding: 10px 50px;"],
+      td[style="padding: 0 50px;"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .three-up-centre td[style="padding: 0 20px 0 40px"],
+      .three-up-centre td[style="padding: 0 20px 0 20px"],
+      .three-up-centre td[style="padding: 0 40px 0 20px"] {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
       }
 
       .content-table {
+        width: 100% !important;
+      }
+
+      .two-up-button-centre--headline {
         width: 100% !important;
       }
 
@@ -131,9 +167,23 @@
         width: 100% !important;
       }
 
+      .hide-on-mobile {
+        display: none !important;
+      }
+
+      .hide-on-desktop {
+        display: block !important;
+        max-height:  none !important;
+        max-width: 100% !important;
+        line-height: 1.5 !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
       a[class="mobile-button"]{
         width: 100% !important;
-        padding: 8px !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
         border: 0 !important;
         box-sizing: border-box;
       }
@@ -150,6 +200,10 @@
 
       .hero-table-cell table td {
         padding: 50px 25px !important;
+      }
+
+      .hero-overlay-button-wrapper {
+        width: 100% !important;
       }
 
     }
@@ -203,36 +257,19 @@
                   <td style="padding: 0; background-color: #ffffff; border: 1px solid #cccccc;" valign="top">
                   
 
-                  <!-- Hero image, title, text, cta -->
+                  <!-- One up -->
+
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
-    <td style="padding: 0;" bgcolor="#BCD331" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="center">
-            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 0;" align="center" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td style="padding: 0;" align="left">
-                        <a href="https://greenfarmparts.com" target="_blank">
-                          <img style="display: block; color: #ffffff; font-size: 16px; font-weight: bold; width: 600px; height: 220px;" class="img-max" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/a5ba9682-5848-4d32-aaef-295f42ffbffd.jpg" alt="This Week Only $25 Off Your $200 Purchase" width="600" height="220" border="0">
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+    <td align="center">
+      <a href="https://greenfarmparts.com" target="_blank">
+        <img class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600; height: 220; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 220;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/cf2bc09c-984f-4aa5-8795-d4e480c837aa.jpg" alt="Memorial Day Savings Weekend">
+      </a>
     </td>
   </tr>
 </table>
-<!-- /Hero image, title, text, cta -->
+
+<!-- /One up -->
 
                   <!--
 =====================
@@ -241,7 +278,7 @@ SPACER
 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-        <td bgcolor="@@bgc" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 30px;" height="30">
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
         </td>
     </tr>
 </table>
@@ -260,12 +297,12 @@ SPACER
           <td align="left">
             <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
               <tr>
-                <td style="padding: 10px 50px;" bgcolor="@@background" align="left" valign="top">
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
                   <!-- content -->
                   <table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tr>
-                      <td align="@@align" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">@@copy</p>
+                      <td align="center" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Starting Friday 24th, save big at <a href="https://greenfarmparts.com" target="_blank" style="color: #333333; text-decoration: none;">GreenFarmParts.com</a> with <strong>10% off all orders $100 or more.</strong> The deals expire after Monday the 28th, so act now to save big!</p>
                       </td>
                     </tr>
                   </table>
@@ -278,7 +315,25 @@ SPACER
     </td>
   </tr>
 </table>
-<!-- /One up -->          
+<!-- /One up -->
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td align="center" style="padding: 0 25px 0 25px;">
+                          <!-- Button -->
+                          <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                            <tbody>
+                              <tr>
+                                <td align="center"><a class="mobile-button" href="https://greenfarmparts.com" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Show Me the Money</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- /Button -->
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
 
                   <!--
 =====================
@@ -287,7 +342,7 @@ SPACER
 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-        <td bgcolor="@@bgc" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 10px;" height="10">
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 35px;" height="35">
         </td>
     </tr>
 </table>
@@ -426,7 +481,7 @@ SPACER
 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-        <td bgcolor="@@bgc" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 30px;" height="30">
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 35px;" height="35">
         </td>
     </tr>
 </table>
@@ -436,23 +491,261 @@ SPACER
 =====================
 -->
 
-                  
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="center" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;"><strong>Do you like free stuff??</strong><br />We certainly do! Use promo code <a href="https://greenfarmparts.com" target="_blank"  style="display: inline-block; background-color: green; color: #ffffff; padding: 2px 8px; font-weight: bold; text-decoration: none;">CAN4</a> or <a href="https://greenfarmparts.com" target="_blank"  style="display: inline-block; background-color: green; color: #ffffff; padding: 2px 8px; font-weight: bold; text-decoration: none;">BOTTLE4</a> when checking out for 4 GreenFarmParts can or bottle koozies.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /One up -->
 
-                  
+                  <!-- Two up centre -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td style="padding: 0;" bgcolor="#ffffff" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding: 0 16px 0 16px;" align="center" valign="top">
+            <!-- Two column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td>
+                  <!-- content left -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <a href="https://greenfarmparts.com" target="_blank">
+                                <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://fillmurray.com/100/100" alt="GreenFarmParts" width="100" height="100" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content left -->
+                  <!-- content right -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
+                    <tr>
+                      <td>
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <a href="https://greenfarmparts.com" target="_blank">
+                                <img style="display: block; font-family: Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://via.placeholder.com/100x100" alt="GreenFarmParts" width="100" height="100" border="0">
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /content right -->
+                </td>
+              </tr>
+            </table>
+            <!-- /Two column -->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Two up centre -->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 45px;" height="45">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- Three up centre -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="three-up-centre">
+  <tr>
+    <td style="padding: 25px 0 0 0;" bgcolor="#BCD331" align="center">
+      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+        <tr>
+          <td style="padding-bottom: 15px;">
+            <h4 style="text-align: center; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 22px; font-weight: bold; margin: 0; padding: 0; color: #333333;">Why Shop At GreenFarmParts?</h4>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" valign="top">
+            <!-- Three column -->
+            <table border="0" cellpadding="0" cellspacing="0" width="100%">
+              <tr>
+                <td align="center">
+                  <!-- Column 1 -->
+                  <!--[if mso]><table border="0" cellpadding="0" cellspacing="0" width="600"><tr><td width="200" align="left"><![endif]-->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
+                    <tr>
+                      <td style="padding: 0 20px 0 40px" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/c9c53e3a-6497-46ce-b257-4ce7b5cd1fb3.png" alt="Outline Mail" width="100" height="100" border="0">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 4px 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 20px;" align="center">
+                              500,000+
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 20px 0; color: #F5F8E0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center">
+                              parts available across 5 different brands
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Column 1 -->
+                  <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                  <!-- Column 2 -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="left">
+                    <tr>
+                      <td style="padding: 0 20px 0 20px" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/feb54e5a-777d-4b1e-ad49-dc5d331c6401.png" alt="Outline Mail" width="100" height="100" border="0">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 4px 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 20px;" align="center">
+                              FREE SHIPPING
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 20px 0; color: #F5F8E0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center">
+                              on all non-oversided products
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Column 2 -->
+                  <!--[if mso]></td><td width="200" align="left"><![endif]-->
+                  <!-- Column 3 -->
+                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="33%" align="right">
+                    <tr>
+                      <td style="padding: 0 40px 0 20px" valign="top">
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                          <tr>
+                            <td align="center">
+                              <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/493fb304-b4d0-4ba5-aebc-0a218cdbec96.png" alt="Outline Mail" width="100" height="100" border="0">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 8px 0 4px 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 20px;" align="center">
+                              GOOD DEALS
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 0 20px 0; color: #F5F8E0; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center">
+                              parts priced for the best deals
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- /Column 3 -->
+                  <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td align="center" style="padding: 0 25px;">
+            <!-- Button -->
+            <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+              <tbody>
+                <tr>
+                  <td align="center"><a class="mobile-button" href="https://greenfarmparts.com" style="background-color: #377D3D; border-top: 15px solid #377D3D; border-right: 25px solid #377D3D; border-bottom: 15px solid #377D3D; border-left: 25px solid #377D3D; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop Our 500,000+ Products</a></td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- /Button -->
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <!--
+=====================
+SPACER
+=====================
+-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+        <td bgcolor="#BCD331" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+        </td>
+    </tr>
+</table>
+<!--
+=====================
+/SPACER
+=====================
+-->
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- /Three up centre -->
+
                   <!-- One up -->
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td align="center">
-      <a href="https://www.greenfarmparts.com" target="_blank">
-        <img class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600pxpx; height: 188pxpx; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 188pxpx;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/2029ec12-ba8c-445c-bd09-7e761c90a07f.jpg" alt="Don't Miss Out! Offer Ends April 15th, SHOP NOW">
+      <a href="https://greenfarmparts.com" target="_blank">
+        <img class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600px; height: 152px; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 152px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/1da36602-6403-4675-962a-15d2fec2fed9.jpg" alt="Don't Miss Out - Sale Ends Monday">
       </a>
     </td>
   </tr>
 </table>
 
 <!-- /One up -->
-
                 </tr>
               </table>
             </td>
@@ -548,7 +841,7 @@ SPACER
 -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
-        <td bgcolor="@@bgc" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
+        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
         </td>
     </tr>
 </table>
