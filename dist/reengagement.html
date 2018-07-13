@@ -238,7 +238,7 @@
       <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
         <tr>
           <td style="padding: 50px 0 25px;" align="center" valign="top">
-            <a href="https://greenfarmparts.com">
+            <a href="https://www.greenfarmparts.com">
               <img style="display: block" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/84c255e8-00f1-44a3-9962-9213a077f4d8.png" width="280" height="64" border="0" alt="Green Farm Parts">
             </a>
           </td>
@@ -263,7 +263,7 @@
   <tr>
     <td align="center">
       <a href="https://greenfarmparts.com" target="_blank">
-        <img class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600px; height: 220px; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 220px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/adab0e8a-e12d-4380-82be-d8913c1b7231.jpg" alt="The Right Part At The Right Price">
+        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: @@Widthpx; height: @@Heightpx; font-size: 18px; font-weight: bold; color: #ffffff; line-height: @@Heightpx;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/adab0e8a-e12d-4380-82be-d8913c1b7231.jpg" alt="The Right Part At The Right Price">
       </a>
     </td>
   </tr>
@@ -276,12 +276,16 @@
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -289,61 +293,69 @@ SPACER
 -->
 
                   <!-- One up -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-  <tr>
-    <td style="padding: 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="left">
-            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Dear *|FNAME|*,</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div mc:repeatable mc:label="one_up" mc:hideable>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+    <tr>
+      <td style="padding: 0;" align="center">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="left">
+              <div mc:edit="one_up">
+                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+                  <tr>
+                    <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                      <!-- content -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Dear *|FNAME|*,</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
 <!-- /One up -->
 
                   <!-- One up -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-  <tr>
-    <td style="padding: 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="left">
-            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Looks like it’s been a little while since we’ve seen you, so we’d like to reintroduce ourselves. Here at <a href="https://greenfarmparts.com" target="_blank">GreenFarmParts</a>, our purpose is to bring you the right part at the right price. As a thank you for staying in touch, we’d like to offer you <strong>15% off your next order</strong>. Use promo code <a href="https://greenfarmparts.com" target="_blank"  style="display: inline-block; background-color: green; color: #ffffff; padding: 2px 8px; font-weight: bold; text-decoration: none;">WELCOMEBACK15</a> when checking out.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div mc:repeatable mc:label="one_up" mc:hideable>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+    <tr>
+      <td style="padding: 0;" align="center">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="left">
+              <div mc:edit="one_up">
+                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+                  <tr>
+                    <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                      <!-- content -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Looks like it’s been a little while since we’ve seen you, so we’d like to reintroduce ourselves. Here at <a href="https://greenfarmparts.com" target="_blank">GreenFarmParts</a>, our purpose is to bring you the right part at the right price. As a thank you for staying in touch, we’d like to offer you <strong>15% off your next order</strong>. Use promo code <a href="https://greenfarmparts.com" target="_blank"  style="display: inline-block; background-color: green; color: #ffffff; padding: 2px 8px; font-weight: bold; text-decoration: none;">WELCOMEBACK15</a> when checking out.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
 <!-- /One up -->
 
                   <!--
@@ -351,12 +363,16 @@ SPACER
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -483,12 +499,16 @@ SPACER
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -507,12 +527,16 @@ SPACER
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -520,61 +544,69 @@ SPACER
 -->
 
                   <!-- One up -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-  <tr>
-    <td style="padding: 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="left">
-            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">You can conveniently shop our store by your specific part type or specific piece of equipment. And if that’s not working for you, a simple site search gets the part you need a click away.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div mc:repeatable mc:label="one_up" mc:hideable>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+    <tr>
+      <td style="padding: 0;" align="center">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="left">
+              <div mc:edit="one_up">
+                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+                  <tr>
+                    <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                      <!-- content -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">You can conveniently shop our store by your specific part type or specific piece of equipment. And if that’s not working for you, a simple site search gets the part you need a click away.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
 <!-- /One up -->
 
                   <!-- One up -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-  <tr>
-    <td style="padding: 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="left">
-            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">If you need help, we’re just a phone call, email, or webchat away to help answer any question you might have.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div mc:repeatable mc:label="one_up" mc:hideable>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+    <tr>
+      <td style="padding: 0;" align="center">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="left">
+              <div mc:edit="one_up">
+                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+                  <tr>
+                    <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                      <!-- content -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">If you need help, we’re just a phone call, email, or webchat away to help answer any question you might have.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
 <!-- /One up -->
 
                   <!--
@@ -582,12 +614,16 @@ SPACER
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -612,8 +648,8 @@ SPACER
               <tbody>
                 <tr>
                   <td align="center" style="padding-bottom: 20px;">
-                    <h2 style="margin: 0; padding: 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 24px;">Interested in Some Free Gear?</h2>
-                    <p style="margin: 0; padding: 0; color: #888888; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 16px;">Receive a set of 4 bottle or can koozies, absolutely free, when you use either promo code below.</p>
+                    <h2 style="margin: 0; padding: 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 24px;">Need Belts or Blades?</h2>
+                    <p style="margin: 0; padding: 0; color: #888888; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 16px;">Also throughout the month of June, save 15% on all belts and blades.</p>
                   </td>
                 </tr>
               </tbody>
@@ -629,14 +665,22 @@ SPACER
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
                             <td align="center">
-                              <a href="https://www.greenfarmparts.com" target="_blank">
-                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/d8931b8e-26eb-427b-82ea-840d057133e7.jpg" alt="Can Koozie" width="150" height="150" border="0">
+                              <a href="https://www.greenfarmparts.com/John-Deere-Belts-s/645.htm" target="_blank">
+                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/8f9dc9f5-1985-4f00-a624-4d4da51a3eec.png" alt="Can Koozie" width="150" height="150" border="0">
                               </a>
                             </td>
                           </tr>
                           <tr>
                             <td style="padding: 8px 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px;" align="center">
-                              CAN4
+                              <!-- Button -->
+                              <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                                <tbody>
+                                  <tr>
+                                    <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Belts-s/645.htm" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop Belts</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- /Button -->
                             </td>
                           </tr>
                         </table>
@@ -651,14 +695,22 @@ SPACER
                         <table border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tr>
                             <td align="center">
-                              <a href="https://www.greenfarmparts.com" target="_blank">
-                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/af9f05e2-d5cc-4990-b717-3a4520ab2df5.jpg" alt="Bottle Koozie" width="150" height="150" border="0">
+                              <a href="https://www.greenfarmparts.com/John-Deere-Lawn-Mower-Blades-s/636.htm" target="_blank">
+                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/c7115f98-26bb-47f7-b67d-b16dacea837a.png" alt="Blades" width="150" height="150" border="0">
                               </a>
                             </td>
                           </tr>
                           <tr>
                             <td style="padding: 8px 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px;" align="center">
-                              BOTTLE4
+                              <!-- Button -->
+                              <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                                <tbody>
+                                  <tr>
+                                    <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Lawn-Mower-Blades-s/636.htm" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop Blades</a></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <!-- /Button -->
                             </td>
                           </tr>
                         </table>
@@ -673,31 +725,22 @@ SPACER
           </td>
         </tr>
         <tr>
-          <td align="center" style="padding: 0 25px;">
-            <!-- Button -->
-            <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
-              <tbody>
-                <tr>
-                  <td align="center"><a class="mobile-button" href="https://greenfarmparts.com" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">I Want Cold Drinks!</a></td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- /Button -->
-          </td>
-        </tr>
-        <tr>
           <td>
             <!--
 =====================
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#f0f0f0" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#f0f0f0" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -726,12 +769,16 @@ SPACER
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -739,61 +786,69 @@ SPACER
 -->
 
                   <!-- One up -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-  <tr>
-    <td style="padding: 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="left">
-            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">From all of us here at GreenFarmParts, we look forward to getting you the right part at the right price.</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div mc:repeatable mc:label="one_up" mc:hideable>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+    <tr>
+      <td style="padding: 0;" align="center">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="left">
+              <div mc:edit="one_up">
+                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+                  <tr>
+                    <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                      <!-- content -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">From all of us here at GreenFarmParts, we look forward to getting you the right part at the right price.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
 <!-- /One up -->
 
                   <!-- One up -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-  <tr>
-    <td style="padding: 0;" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="left">
-            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                        <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Sincerely,<br />The GreenFarmParts Team</p>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+<div mc:repeatable mc:label="one_up" mc:hideable>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+    <tr>
+      <td style="padding: 0;" align="center">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="left">
+              <div mc:edit="one_up">
+                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+                  <tr>
+                    <td style="padding: 10px 50px;" bgcolor="#ffffff" align="left" valign="top">
+                      <!-- content -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td align="left" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Sincerely,<br />The GreenFarmParts Team</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
 <!-- /One up -->
 
                   <!--
@@ -801,12 +856,16 @@ SPACER
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER
@@ -819,7 +878,7 @@ SPACER
   <tr>
     <td align="center">
       <a href="https://zglidesuspension.com" target="_blank">
-        <img class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600pxpx; height: 152pxpx; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 152pxpx;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/497bb65d-f1fe-4e92-a7ab-fc4ab9c80b21.jpg" alt="Smooth Out Your Ride With ZGlide - Click For More">
+        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600; height: 152; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 152;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/497bb65d-f1fe-4e92-a7ab-fc4ab9c80b21.jpg" alt="Smooth Out Your Ride With ZGlide - Click For More">
       </a>
     </td>
   </tr>
@@ -919,12 +978,16 @@ SPACER
 SPACER
 =====================
 -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-        <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
-        </td>
-    </tr>
-</table>
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
 <!--
 =====================
 /SPACER

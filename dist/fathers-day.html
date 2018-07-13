@@ -32,6 +32,10 @@
         border-top: 1px solid #cccccc;
     }
 
+    a {
+      color: #377D3D;
+    }
+
     /* Remove ios blue links */
     a[x-apple-data-detectors] {
       color: inherit !important;
@@ -42,59 +46,13 @@
       line-height: inherit !important;
     }
 
-    .hero-tag p {
-        color: #377D3D;
-        background-color: #ffffff;
-        display: inline-block;
-        padding: 5px 10px;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 20px;
-        text-transform: uppercase;
-        margin: 0;
-    }
-
-    .hero-title h1 {
-        color: #ffffff;
-        background-color: #377D3D;
-        margin: 0 0 30px;
-        display: inline-block;
-        padding: 5px 10px;
-        text-transform: uppercase;
-        font-size: 40px !important;
-        line-height: 40px !important;
-    }
-
-    .promoCodeBar {
-      margin: 0;;
-    }
-
-    .promocode {
-      background-color: #fff;
-      display: inline-block;
-      padding: 4px 2px;
-      margin: 0 2px;
-      font-weight: bold;
-      color: #377D3D;
-    }
-
-    .mobile-button {
-        transition: all 200ms ease-in-out;
-    }
-
-    .mobile-button:hover {
-        background-color: #90a326 !important;
-        border-color: #90a326 !important;
-    }
-
-    .promoFooter a {
-        text-decoration: none;
-        color: #ffffff;
-    }
-
-    .promoFooter h3 {
-        margin: 0 0 10px;
-        color: #ffffff;
+    .hide-on-desktop {
+      display: none !important;
+      width: 0px !important;
+      height:  0px !important;
+      overflow: hidden !important;
+      line-height:  0px !important;
+      font-size: 0px !important;
     }
 
     .footer-utility-links {
@@ -115,9 +73,87 @@
         text-decoration: underline;
     }
 
+    .hero-table-cell {
+      background-color: #377D3D;
+      background-image: url("https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg");
+    }
+
+    .order-details-table table td {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    .order-details-table table tr:first-child td {
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    .hero-overlay-button-wrapper,
+    .mobile-button {
+      transition: all 250ms ease-in-out;
+    }
+
+    .hero-overlay-button-wrapper:hover,
+    .mobile-button:hover {
+      background-color: #8fa226 !important;
+      border-color: #8fa226 !important;
+    }
+
+    .templateColumnContainer{
+      width:200px;
+    }
+
+    .leftColumnContent,
+    .centerColumnContent,
+    .rightColumnContent {
+      text-align: center;
+      padding-top:0;
+      padding-right:20px;
+      padding-bottom:20px;
+      padding-left:20px;
+    }
+
+    .leftColumnContent img, 
+    .rightColumnContent img{
+        display:inline;
+        height:auto;
+        max-width:260px;
+    }
+
     /* Outline styles */
     @media only screen and (max-width: 599px) {
+      .templateColumnContainer{
+        display:block !important;
+        width:100% !important;
+      }
+
+      .leftColumnContent img,
+      .centerColumnContent img, 
+      .rightColumnContent img{
+          display:block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      td[style*="padding: 10px 50px;"],
+      td[style="padding: 0 50px;"] {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .three-up-centre td[style="padding: 0 20px 0 40px"],
+      .three-up-centre td[style="padding: 0 20px 0 20px"],
+      .three-up-centre td[style="padding: 0 40px 0 20px"] {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+
       .content-table {
+        width: 100% !important;
+      }
+
+      .two-up-button-centre--headline {
         width: 100% !important;
       }
 
@@ -131,9 +167,23 @@
         width: 100% !important;
       }
 
+      .hide-on-mobile {
+        display: none !important;
+      }
+
+      .hide-on-desktop {
+        display: block !important;
+        max-height:  none !important;
+        max-width: 100% !important;
+        line-height: 1.5 !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
       a[class="mobile-button"]{
         width: 100% !important;
-        padding: 8px !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
         border: 0 !important;
         box-sizing: border-box;
       }
@@ -147,29 +197,13 @@
       .email-header .content-table td {
         padding-top: 25px !important;
       }
-        
-      .hero-title,
-      .hero-tag {
-        text-align: center;
+
+      .hero-table-cell table td {
+        padding: 50px 25px !important;
       }
 
-      .hero-title h1 {
-        font-size: 24px !important;
-        line-height: 24px !important;
-      }
-
-      .promoCodeBar .promocode {
-        padding-left: 4px;
-        padding-right: 4px;
-      }
-
-      .product-listing--product-name,
-      .product-listing--product-price {
-        text-align: center;
-      }
-
-      .promoFooter h3 {
-        font-size: 16px !important;
+      .hero-overlay-button-wrapper {
+        width: 100% !important;
       }
 
       .two-up--articles > tbody > tr > td {
@@ -196,8 +230,12 @@
   *|MC_PREVIEW_TEXT|*
 </div>
 
-<!-- Don't forget to include a header -->
-<!-- Header -->
+<!-- Background -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#f0f0f0" align="center">
+        
+        <!-- Header -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%" class="email-header">
   <tr>
     <td align="center">
@@ -214,46 +252,31 @@
   </tr>
 </table>
 <!-- /Header -->
+        
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                <tr>
+                  <td style="padding: 0; background-color: #ffffff;" valign="top">
+                  
+
+                  <!-- One up -->
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td align="center">
-      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-        <tr>
-          <td style="padding: 0; background-color: #ffffff; border: 1px solid #cccccc;" valign="top">
-          
-          <!-- Hero image, title, text, cta -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td style="padding: 0;" bgcolor="#BCD331" align="center">
-      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td align="center">
-            <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-              <tr>
-                <td style="padding: 0;" align="center" valign="top">
-                  <!-- content -->
-                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                      <td style="padding: 0;" align="left">
-                        <a href="https://www.greenfarmparts.com/" target="_blank">
-                          <img style="display: block; color: #ffffff; font-size: 16px; font-weight: bold; width: 600px; height: 200px;" class="img-max" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/cd665f58-c944-43d2-9e99-bc133bc9911e.png" alt="Save 15% on all belts and blades on Green Farm Parts" width="600" height="200" border="0">
-                        </a>
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-      </table>
+      <a href="https://greenfarmparts.com" target="_blank">
+        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: @@Widthpx; height: @@Heightpx; font-size: 18px; font-weight: bold; color: #ffffff; line-height: @@Heightpx;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/bedaccee-5cd1-41ae-a6e6-07718fc6b10a.png" alt="Save on the Perfect Gift for Dad">
+      </a>
     </td>
   </tr>
 </table>
-<!-- /Hero image, title, text, cta -->
 
-          <!--
+<!-- /One up -->
+
+
+                  <!--
 =====================
 SPACER
 =====================
@@ -262,7 +285,7 @@ SPACER
   <div mc:edit="spacer">
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
       <tr>
-          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 30px;" height="30">
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 15px;" height="15">
           </td>
       </tr>
   </table>
@@ -274,7 +297,7 @@ SPACER
 =====================
 -->
 
-          <!-- One up -->
+                  <!-- One up -->
 <div mc:repeatable mc:label="one_up" mc:hideable>
   <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
     <tr>
@@ -289,8 +312,8 @@ SPACER
                       <!-- content -->
                       <table border="0" cellpadding="0" cellspacing="0" width="100%">
                         <tr>
-                          <td align="center" style="padding: 0; color: #444444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;"><strong style="font-size: 20px; color: #444444;">Sharpen Your Cut With New Blades</strong></p>
+                          <td align="center" style="padding: 0; color: @@text; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;"><strong style="font-size: 20px;">Get Dad what he really wants this year!</strong><br />Save 10% on these items. Save 15% on your entire order over $100 using promo code <span style="display: inline-block; background-color: green; color: #ffffff; padding: 2px 8px; font-weight: bold; text-decoration: none;">FATHERSDAY18</span> at checkout.</p>
                           </td>
                         </tr>
                       </table>
@@ -307,7 +330,7 @@ SPACER
 </div>
 <!-- /One up -->
 
-          <!--
+                  <!--
 =====================
 SPACER
 =====================
@@ -328,7 +351,7 @@ SPACER
 =====================
 -->
 
-          <!-- Two up -->
+                  <!-- Two up -->
 <div mc:repeatable mc:label="two_up_products" mc:hideable>
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
@@ -347,19 +370,19 @@ SPACER
                           <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
                             <tr>
                               <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m145476" target="_blank">
-                                  <img mc:edit="left_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/M145476-2T.jpg" alt="Mower Blades Kit M145476 - Set of 3 Blades" width="100" height="100" border="0">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=TY25989" target="_blank">
+                                  <img mc:edit="left_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/TY25989-3T.jpg" alt="John Deere Tool Holster TY25989" width="100" height="100" border="0">
                                 </a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m145476" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="left_product_title">Mower Blades Kit M145476 - Set of 3 Blades</a>
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=TY25989" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="left_product_title">John Deere Tool Holster TY25989</a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="left_product_original_price">
-                                <del style="color: #888888;">$34.86</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
+                                <del style="color: #888888;">$8.56</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
                               </td>
                             </tr>
                             <tr>
@@ -371,7 +394,7 @@ SPACER
                                       <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                           <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=m145476" target="_blank" mc:edit="left_product_add_to_cart">Add to Cart</a>
+                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=TY25989" target="_blank" mc:edit="left_product_add_to_cart">Add to Cart</a>
                                           </td>
                                         </tr>
                                       </table>
@@ -393,19 +416,19 @@ SPACER
                           <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
                             <tr>
                               <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=am141039" target="_blank">
-                                  <img mc:edit="right_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/AM141039-2T.jpg" alt="Mower Blade Kit AM141039 - Set of 2 Blades" width="100" height="100" border="0">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=TY26558" target="_blank">
+                                  <img mc:edit="right_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/TY26558-2T.jpg" alt="John Deere Telescopic Magnetic Pickup Tool TY26558" width="100" height="100" border="0">
                                 </a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=am141039" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="right_product_title">Mower Blade Kit AM141039 - Set of 2 Blades</a>
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=TY26558" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="right_product_title">John Deere Telescopic Magnetic Pickup Tool TY26558</a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="right_product_original_price">
-                                <del style="color: #888888;">$27.00</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
+                                <del style="color: #888888;">$5.39</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
                               </td>
                             </tr>
                             <tr>
@@ -417,7 +440,7 @@ SPACER
                                       <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                           <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=am141039" target="_blank" mc:edit="rightt_product_add_to_cart">Add to Cart</a>
+                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=TY26558" target="_blank" mc:edit="rightt_product_add_to_cart">Add to Cart</a>
                                           </td>
                                         </tr>
                                       </table>
@@ -446,7 +469,7 @@ SPACER
 <!-- /Two up -->
 
 
-           <!--
+                  <!--
 =====================
 SPACER
 =====================
@@ -455,7 +478,7 @@ SPACER
   <div mc:edit="spacer">
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
       <tr>
-          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 20px;" height="20">
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 15px;" height="15">
           </td>
       </tr>
   </table>
@@ -467,7 +490,7 @@ SPACER
 =====================
 -->
 
-          <!-- Two up -->
+                  <!-- Two up -->
 <div mc:repeatable mc:label="two_up_products" mc:hideable>
   <table border="0" cellpadding="0" cellspacing="0" width="100%">
     <tr>
@@ -486,19 +509,19 @@ SPACER
                           <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
                             <tr>
                               <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m143504" target="_blank">
-                                  <img mc:edit="left_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/M143504-2T.jpg" alt="Mower Blade Kit - Set of 3 Blades M143504" width="100" height="100" border="0">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=LP69988" target="_blank">
+                                  <img mc:edit="left_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/LP69988-2T.jpg" alt="John Deere 100th Anniversary Hat LP69988" width="100" height="100" border="0">
                                 </a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m143504" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="left_product_title">Mower Blade Kit - Set of 3 Blades M143504</a>
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=LP69988" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="left_product_title">John Deere 100th Anniversary Hat LP69988</a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="left_product_original_price">
-                                <del style="color: #888888;">$74.19</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
+                                <del style="color: #888888;">$20.00</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
                               </td>
                             </tr>
                             <tr>
@@ -510,7 +533,7 @@ SPACER
                                       <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                           <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=m143504" target="_blank" mc:edit="left_product_add_to_cart">Add to Cart</a>
+                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=LP69988" target="_blank" mc:edit="left_product_add_to_cart">Add to Cart</a>
                                           </td>
                                         </tr>
                                       </table>
@@ -532,19 +555,19 @@ SPACER
                           <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
                             <tr>
                               <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m152726" target="_blank">
-                                  <img mc:edit="right_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/M152726-2T.jpg" alt="Mower Blades Kit M152726 - Set of 3 Blades" width="100" height="100" border="0">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=LP69986" target="_blank">
+                                  <img mc:edit="right_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/LP69986-2T.jpg" alt="John Deere Hat 100th Anniversary Green/White" width="100" height="100" border="0">
                                 </a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m152726" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="right_product_title">Mower Blades Kit M152726 - Set of 3 Blades</a>
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=LP69986" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="right_product_title">John Deere Hat 100th Anniversary Green/White</a>
                               </td>
                             </tr>
                             <tr>
                               <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="right_product_original_price">
-                                <del style="color: #888888;">$63.33</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
+                                <del style="color: #888888;">$20.00</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
                               </td>
                             </tr>
                             <tr>
@@ -556,7 +579,7 @@ SPACER
                                       <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                           <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=m152726" target="_blank" mc:edit="rightt_product_add_to_cart">Add to Cart</a>
+                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=LP69986" target="_blank" mc:edit="rightt_product_add_to_cart">Add to Cart</a>
                                           </td>
                                         </tr>
                                       </table>
@@ -585,7 +608,7 @@ SPACER
 <!-- /Two up -->
 
 
-          <!--
+                  <!--
 =====================
 SPACER
 =====================
@@ -594,7 +617,7 @@ SPACER
   <div mc:edit="spacer">
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
       <tr>
-          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 20px;" height="20">
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 15px;" height="15">
           </td>
       </tr>
   </table>
@@ -605,101 +628,245 @@ SPACER
 /SPACER
 =====================
 -->
-          
-          <!-- Button -->
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="center" style="padding: 0 25px 0 25px;">
-                  <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+
+                  <!-- Two up -->
+<div mc:repeatable mc:label="two_up_products" mc:hideable>
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td style="padding: 0;" bgcolor="#ffffff" align="center">
+        <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+          <tr>
+            <td style="padding: 0 25px 0 25px;" align="center" valign="top">
+              <!-- Two column -->
+              <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <tr>
+                  <td>
+                    <!-- content left -->
+                    <table class="content-table two-up--articles" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
+                      <tr>
+                        <td>
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
+                            <tr>
+                              <td align="center" style="padding: 10px 10px 0;">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=TY19976" target="_blank">
+                                  <img mc:edit="left_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/TY19976-2.jpg" alt="John Deere 14 Piece Combination Wrench Set" width="100" height="100" border="0">
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=TY19976" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="left_product_title">John Deere 14 Piece Combination Wrench Set</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="left_product_original_price">
+                                <del style="color: #888888;">$140.81</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 25px 10px;">
+                                <!-- Button -->
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                  <tr>
+                                    <td align="center">
+                                      <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td align="center">
+                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=TY19976" target="_blank" mc:edit="left_product_add_to_cart">Add to Cart</a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- /Button -->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- /content left -->
+                    <!-- content right -->
+                    <table class="content-table two-up--articles" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
+                      <tr>
+                        <td>
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
+                            <tr>
+                              <td align="center" style="padding: 10px 10px 0;">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=ty25840" target="_blank">
+                                  <img mc:edit="right_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/TY25840-2T.jpg" alt="John Deere Metric 1/2in Drive & Deep 25 Piece Socket Set" width="100" height="100" border="0">
+                                </a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
+                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=ty25840" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="right_product_title">John Deere Metric 1/2in Drive & Deep 25 Piece Socket Set</a>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="right_product_original_price">
+                                <del style="color: #888888;">$109.77</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="padding: 0 25px 10px;">
+                                <!-- Button -->
+                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                  <tr>
+                                    <td align="center">
+                                      <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
+                                        <tr>
+                                          <td align="center">
+                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=ty25840" target="_blank" mc:edit="rightt_product_add_to_cart">Add to Cart</a>
+                                          </td>
+                                        </tr>
+                                      </table>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- /Button -->
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <!-- /content right -->
+                  </td>
+                </tr>
+              </table>
+              <!-- /Two column -->
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
+<!-- /Two up -->
+
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
                     <tbody>
                       <tr>
-                        <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Lawn-Mower-Blades-s/636.htm" style="background-color: #377D3D; border-top: 15px solid #377D3D; border-right: 25px solid #377D3D; border-bottom: 15px solid #377D3D; border-left: 25px solid #377D3D; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop All 660 Blades</a></td>
+                        <td align="center" style="padding: 0 25px 0 25px;">
+                          <!-- Button -->
+                          <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                            <tbody>
+                              <tr>
+                                <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/" style="background-color: #377D3D; border-top: 15px solid #377D3D; border-right: 25px solid #377D3D; border-bottom: 15px solid #377D3D; border-left: 25px solid #377D3D; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop All GreenFarmParts for Dad</a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                          <!-- /Button -->
+                        </td>
                       </tr>
                     </tbody>
                   </table>
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 45px;" height="45">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!--
+=====================
+SPACER
+=====================
+-->
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#BCD331" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 10px;" height="10">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+                  <!-- One up -->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
+  <tr>
+    <td style="padding: 0;" align="center">
+      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+          <td align="left">
+            <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
+              <tr>
+                <td style="padding: 35px; background-color: #BCD331;" align="center" valign="top">
+                  <!-- content -->
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tr>
+                      <td align="center" style="padding: 0 15px; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
+                        <p style="font-size: 16px; line-height: 24px; margin: 0 0 15px; padding: 0;"><strong style="font-size: 20px">Don't Know What Dad Wants?</strong><br/>You can get him a Green Farm Parts gift card so he can get the exact thing that he's been looking for. </p>
+                      </td>
+                    </tr>
+                  </table>
+                 <!-- Button -->
+                  <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                    <tbody>
+                      <tr>
+                        <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/green-farm-parts-gift-certificate-p/gft.htm" style="background-color: #ffffff; border-top: 15px solid #ffffff; border-right: 25px solid #ffffff; border-bottom: 15px solid #ffffff; border-left: 25px solid #ffffff; display: inline-block; color: #BCD331; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Get Him A Gift Card</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <!-- /Button -->
                 </td>
               </tr>
-            </tbody>
-          </table>
-          <!-- /Button -->
-
-          <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
+            </table>
           </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-
-          <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="#dddddd" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-
-          <!-- One up -->
-<div mc:repeatable mc:label="one_up" mc:hideable>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-    <tr>
-      <td style="padding: 0;" align="center">
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <td align="left">
-              <div mc:edit="one_up">
-                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-                  <tr>
-                    <td style="padding: 10px 50px;" bgcolor="#dddddd" align="left" valign="top">
-                      <!-- content -->
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tr>
-                          <td align="center" style="padding: 0; color: #444444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;"><strong style="font-size: 20px; color: #444444;">Save 15% off Belts for a Limited Time</strong></p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</div>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
 <!-- /One up -->
 
-          <!--
+                  <!--
 =====================
 SPACER
 =====================
@@ -708,7 +875,7 @@ SPACER
   <div mc:edit="spacer">
     <table border="0" cellpadding="0" cellspacing="0" width="100%">
       <tr>
-          <td bgcolor="#dddddd" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 10px;" height="10">
+          <td bgcolor="#BCD331" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 10px;" height="10">
           </td>
       </tr>
   </table>
@@ -720,330 +887,13 @@ SPACER
 =====================
 -->
 
-          <!-- Two up -->
-<div mc:repeatable mc:label="two_up_products" mc:hideable>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td style="padding: 0;" bgcolor="#dddddd" align="center">
-        <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-          <tr>
-            <td style="padding: 0 25px 0 25px;" align="center" valign="top">
-              <!-- Two column -->
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td>
-                    <!-- content left -->
-                    <table class="content-table two-up--articles" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
-                      <tr>
-                        <td>
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
-                            <tr>
-                              <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=gx20006" target="_blank">
-                                  <img mc:edit="left_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/GX20006-2T.jpg" alt="Traction Drive Belt GX20006" width="100" height="100" border="0">
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=gx20006" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="left_product_title">Traction Drive Belt GX20006</a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="left_product_original_price">
-                                <del style="color: #888888;">$20.21</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 25px 10px;">
-                                <!-- Button -->
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
-                                  <tr>
-                                    <td align="center">
-                                      <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                          <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=gx20006" target="_blank" mc:edit="left_product_add_to_cart">Add to Cart</a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                </table>
-                                <!-- /Button -->
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- /content left -->
-                    <!-- content right -->
-                    <table class="content-table two-up--articles" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
-                      <tr>
-                        <td>
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
-                            <tr>
-                              <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=gx20072" target="_blank">
-                                  <img mc:edit="right_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/GX20072-2T.jpg" alt="42 Inch Flat Belt GX20072" width="100" height="100" border="0">
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=gx20072" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="right_product_title">42 Inch Flat Belt GX20072</a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="right_product_original_price">
-                                <del style="color: #888888;">$37.95</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 25px 10px;">
-                                <!-- Button -->
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
-                                  <tr>
-                                    <td align="center">
-                                      <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                          <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=gx20072" target="_blank" mc:edit="rightt_product_add_to_cart">Add to Cart</a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                </table>
-                                <!-- /Button -->
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- /content right -->
-                  </td>
-                </tr>
-              </table>
-              <!-- /Two column -->
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</div>
-<!-- /Two up -->
-
-
-           <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="#dddddd" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 20px;" height="20">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-
-          <!-- Two up -->
-<div mc:repeatable mc:label="two_up_products" mc:hideable>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td style="padding: 0;" bgcolor="#dddddd" align="center">
-        <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-          <tr>
-            <td style="padding: 0 25px 0 25px;" align="center" valign="top">
-              <!-- Two column -->
-              <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                <tr>
-                  <td>
-                    <!-- content left -->
-                    <table class="content-table two-up--articles" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
-                      <tr>
-                        <td>
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
-                            <tr>
-                              <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m126536" target="_blank">
-                                  <img mc:edit="left_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/M126536-2T.jpg" alt="V-Belt For 38 and 42C Mower Decks M126536" width="100" height="100" border="0">
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m126536" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="left_product_title">V-Belt For 38 and 42C Mower Decks M126536</a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="left_product_original_price">
-                                <del style="color: #888888;">$41.14</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 25px 10px;">
-                                <!-- Button -->
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
-                                  <tr>
-                                    <td align="center">
-                                      <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                          <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=m126536" target="_blank" mc:edit="left_product_add_to_cart">Add to Cart</a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                </table>
-                                <!-- /Button -->
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- /content left -->
-                    <!-- content right -->
-                    <table class="content-table two-up--articles" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
-                      <tr>
-                        <td>
-                          <table border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #ffffff; border: 1px solid #cccccc;">
-                            <tr>
-                              <td align="center" style="padding: 10px 10px 0;">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m143019" target="_blank">
-                                  <img mc:edit="right_product_image" style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 100px; height: 100px;" src="https://www.greenfarmparts.com/v/vspfiles/photos/M143019-2T.jpg" alt="Primary Drive Belt <br />M143019" width="100" height="100" border="0">
-                                </a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 22px;" align="center">
-                                <a href="https://greenfarmparts.com/ProductDetails.asp?ProductCode=m143019" style="color: #377D3D; font-weight: bold; text-decoration: none;" target="_blank" mc:edit="right_product_title">Primary Drive Belt <br />M143019</a>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 10px 10px; color: #444; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 18px;" align="center" class="product-listing--product-price" mc:edit="right_product_original_price">
-                                <del style="color: #888888;">$33.14</del><br /><strong style="color: #ff0000;">See Price in Cart</strong>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td style="padding: 0 25px 10px;">
-                                <!-- Button -->
-                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
-                                  <tr>
-                                    <td align="center">
-                                      <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
-                                        <tr>
-                                          <td align="center">
-                                            <a class="mobile-button" style="background-color: #BCD331; border-top: 8px solid #BCD331; border-right: 16px solid #BCD331; border-bottom: 8px solid #BCD331; border-left: 16px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 14px; text-decoration: none;" href="https://greenfarmparts.com/shoppingcart.asp?productcode=m143019" target="_blank" mc:edit="rightt_product_add_to_cart">Add to Cart</a>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                    </td>
-                                  </tr>
-                                </table>
-                                <!-- /Button -->
-                              </td>
-                            </tr>
-                          </table>
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- /content right -->
-                  </td>
-                </tr>
-              </table>
-              <!-- /Two column -->
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</div>
-<!-- /Two up -->
-
-
-          <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="#dddddd" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 20px;" height="20">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-          
-          <!-- Button -->
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
-            <tbody>
-              <tr>
-                <td align="center" bgcolor="#dddddd" style="padding: 0 25px 0 25px;">
-                  <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
-                    <tbody>
-                      <tr>
-                        <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Belts-s/645.htm" style="background-color: #377D3D; border-top: 15px solid #377D3D; border-right: 25px solid #377D3D; border-bottom: 15px solid #377D3D; border-left: 25px solid #377D3D; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop All 3,619 Belts</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- /Button -->
-
-          <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="#dddddd" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-
-          <!-- One up -->
+                  <!-- One up -->
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td align="center">
-      <a href="https://www.greenfarmparts.com/John-Deere-Gator-Attachments-s/450.htm" target="_blank">
-        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: @@Widthpx; height: @@Heightpx; font-size: 18px; font-weight: bold; color: #ffffff; line-height: @@Heightpx;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9626b6b1-6b41-4ae6-8d1c-ddd11f78c527.png" alt="15% Off Gator Attachments. Use promocode JUSTATTACHIT.">
+      <a href="https://greenfarmparts.com" target="_blank">
+        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600; height: 200; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 200;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/a0128676-833c-43fd-af35-cacaeaae02fa.png" alt="Don't Miss your chance to surprise Dad! Sale ends Tuesday">
       </a>
     </td>
   </tr>
@@ -1051,13 +901,13 @@ SPACER
 
 <!-- /One up -->
 
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
 
-<!-- footer logo links -->
+        <!-- footer logo links -->
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td style="padding: 30px 0 0 0;" align="center">
@@ -1138,6 +988,31 @@ SPACER
   </tr>
 </table>
 <!-- /footer logo links -->
+
+        <!--
+=====================
+SPACER
+=====================
+-->
+<div mc:repeatable mc:label="spacer" mc:hideable>
+  <div mc:edit="spacer">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+          <td bgcolor="#ffffff" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
+          </td>
+      </tr>
+  </table>
+  </div>
+</div>
+<!--
+=====================
+/SPACER
+=====================
+-->
+
+      </td>
+    </tr>
+  </table>
 
 </body>
 </html>

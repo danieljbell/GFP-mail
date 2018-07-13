@@ -170,7 +170,11 @@
 
       .promoFooter h3 {
         font-size: 16px !important;
-    }
+      }
+
+      .two-up--articles > tbody > tr > td {
+        padding-bottom: 30px;
+      }
 
     }
   </style>
@@ -201,63 +205,183 @@
       <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
         <tr>
           <td style="padding: 0; background-color: #ffffff; border: 1px solid #cccccc;" valign="top">
-          @@include('hero/_hero-img-title-text-cta-centre.html')
-
-          <!-- One up -->
-          <table border="0" cellpadding="0" cellspacing="0" width="100%" mc:hideable>
-            <tr>
-              <td style="padding: 10px 0; background-color: #cccccc;" align="center">
-                <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                  <tr>
-                    <td align="center">
-                      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
-                        <tr>
-                          <td style="padding: 0 25px 0 25px;" align="center" valign="top">
-                            <!-- content -->
-                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                              <tr>
-                                <td align="center" style="padding: 0 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: normal; line-height: 14px;">
-                                  <p style="font-family: 'Open Sans', Helvetica, Arial, sans-serif;" mc:edit="promoCodeBar" class="promoCodeBar">Use Promo Code <span class="promocode">CLEANCUT</span> at Checkout</p>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>
-          </table>
-          <!-- /One up -->
-
-          @@include('article/_article.html', {
-            "productName": "Some Name",
-            "productLink": "https://greenfarmparts.com",
-            "productCode": "AM141041",
-            "productPrice": "63.57",
-            "productImage": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/fff7cf46-3e2e-4d8e-abde-9989d1c3865f.jpg",
-            "productFitment": "D130",
-            "hasBorder": "block"
+          
+          @@include('hero/_hero-img.html', {
+            "link": "https://www.greenfarmparts.com/",
+            "bgImg": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/cd665f58-c944-43d2-9e99-bc133bc9911e.png",
+            "headline": "Save 15% on all belts and blades on Green Farm Parts"
           })
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#ffffff",
+            "space": "30"
+          })
+
           @@include('one-up/_one-up.html', {
-            "moduleClass": "promoFooter",
-            "bgImage": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/3bdffc68-f1ca-4e15-beea-c0055800737c.jpg",
-            "moduleLink": "https://greenfarmparts.com"
+            "background": "#ffffff",
+            "align": "center",
+            "text": "#444444",
+            "copy": "<strong style=\"font-size: 20px; color: #444444;\">Sharpen Your Cut With New Blades</strong>"
           })
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#ffffff",
+            "space": "10"
+          })
+
+          @@include('two-up/_article.html', {
+            "bgc": "#ffffff",
+            "productOneName": "Mower Blades Kit M145476 - Set of 3 Blades",
+            "productOneCode": "m145476",
+            "productOnePrice": "34.86",
+            "productOneNewPrice": "See Price in Cart",
+            "productOneImage": "https://www.greenfarmparts.com/v/vspfiles/photos/M145476-2T.jpg",
+            "productTwoName": "Mower Blade Kit AM141039 - Set of 2 Blades",
+            "productTwoCode": "am141039",
+            "productTwoPrice": "27.00",
+            "productTwoNewPrice": "See Price in Cart",
+            "productTwoImage": "https://www.greenfarmparts.com/v/vspfiles/photos/AM141039-2T.jpg"
+          })
+
+           @@include('misc/_spacer.html', {
+            "bgc": "#ffffff",
+            "space": "20"
+          })
+
+          @@include('two-up/_article.html', {
+            "bgc": "#ffffff",
+            "productOneName": "Mower Blade Kit - Set of 3 Blades M143504",
+            "productOneCode": "m143504",
+            "productOnePrice": "74.19",
+            "productOneNewPrice": "See Price in Cart",
+            "productOneImage": "https://www.greenfarmparts.com/v/vspfiles/photos/M143504-2T.jpg",
+            "productTwoName": "Mower Blades Kit M152726 - Set of 3 Blades",
+            "productTwoCode": "m152726",
+            "productTwoPrice": "63.33",
+            "productTwoNewPrice": "See Price in Cart",
+            "productTwoImage": "https://www.greenfarmparts.com/v/vspfiles/photos/M152726-2T.jpg"
+          })
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#ffffff",
+            "space": "20"
+          })
+          
+          <!-- Button -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td align="center" style="padding: 0 25px 0 25px;">
+                  <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                    <tbody>
+                      <tr>
+                        <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Lawn-Mower-Blades-s/636.htm" style="background-color: #377D3D; border-top: 15px solid #377D3D; border-right: 25px solid #377D3D; border-bottom: 15px solid #377D3D; border-left: 25px solid #377D3D; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop All 660 Blades</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- /Button -->
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#ffffff",
+            "space": "50"
+          })
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#dddddd",
+            "space": "50"
+          })
+
+          @@include('one-up/_one-up.html', {
+            "background": "#dddddd",
+            "align": "center",
+            "text": "#444444",
+            "copy": "<strong style=\"font-size: 20px; color: #444444;\">Save 15% off Belts for a Limited Time</strong>"
+          })
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#dddddd",
+            "space": "10"
+          })
+
+          @@include('two-up/_article.html', {
+            "bgc": "#dddddd",
+            "productOneName": "Traction Drive Belt GX20006",
+            "productOneCode": "gx20006",
+            "productOnePrice": "20.21",
+            "productOneNewPrice": "See Price in Cart",
+            "productOneImage": "https://www.greenfarmparts.com/v/vspfiles/photos/GX20006-2T.jpg",
+            "productTwoName": "42 Inch Flat Belt GX20072",
+            "productTwoCode": "gx20072",
+            "productTwoPrice": "37.95",
+            "productTwoNewPrice": "See Price in Cart",
+            "productTwoImage": "https://www.greenfarmparts.com/v/vspfiles/photos/GX20072-2T.jpg"
+          })
+
+           @@include('misc/_spacer.html', {
+            "bgc": "#dddddd",
+            "space": "20"
+          })
+
+          @@include('two-up/_article.html', {
+            "bgc": "#dddddd",
+            "productOneName": "V-Belt For 38 and 42C Mower Decks M126536",
+            "productOneCode": "m126536",
+            "productOnePrice": "41.14",
+            "productOneNewPrice": "See Price in Cart",
+            "productOneImage": "https://www.greenfarmparts.com/v/vspfiles/photos/M126536-2T.jpg",
+            "productTwoName": "Primary Drive Belt <br />M143019",
+            "productTwoCode": "m143019",
+            "productTwoPrice": "33.14",
+            "productTwoNewPrice": "See Price in Cart",
+            "productTwoImage": "https://www.greenfarmparts.com/v/vspfiles/photos/M143019-2T.jpg"
+          })
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#dddddd",
+            "space": "20"
+          })
+          
+          <!-- Button -->
+          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tbody>
+              <tr>
+                <td align="center" bgcolor="#dddddd" style="padding: 0 25px 0 25px;">
+                  <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
+                    <tbody>
+                      <tr>
+                        <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Belts-s/645.htm" style="background-color: #377D3D; border-top: 15px solid #377D3D; border-right: 25px solid #377D3D; border-bottom: 15px solid #377D3D; border-left: 25px solid #377D3D; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop All 3,619 Belts</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- /Button -->
+
+          @@include('misc/_spacer.html', {
+            "bgc": "#dddddd",
+            "space": "50"
+          })
+
+          @@include('one-up/_one-up--image-only.html', {
+            "Link": "https://www.greenfarmparts.com/John-Deere-Gator-Attachments-s/450.htm",
+            "Widthpxpx": "600",
+            "Heightpxpx": "190",
+            "Image": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9626b6b1-6b41-4ae6-8d1c-ddd11f78c527.png",
+            "AltText": "15% Off Gator Attachments. Use promocode JUSTATTACHIT."
+          })
+
         </tr>
       </table>
     </td>
   </tr>
 </table>
 
-<!-- Include all your body email components here -->
-
-
-<!-- @@include('article/_articles-title.html') -->
-
-<!-- Don't forget to include a footer -->
 @@include('footer/_footer-logo-links.html')
 
 </body>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>*|MC_SUBJECT|*</title>
+  <title>*|MC:SUBJECT|*</title>
   <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,6 +30,10 @@
         background: transparent;
         border: 0;
         border-top: 1px solid #cccccc;
+    }
+
+    a {
+      color: #377D3D;
     }
 
     /* Remove ios blue links */
@@ -92,18 +96,77 @@
 
     .hero-overlay-button-wrapper:hover,
     .mobile-button:hover {
-      background-color: #8fa226 !important;
-      border-color: #8fa226 !important;
+      background-color: #ab0101 !important;
+      border-color: #ab0101 !important;
+    }
+
+    .templateColumnContainer{
+      width:200px;
+    }
+
+    .leftColumnContent,
+    .centerColumnContent,
+    .rightColumnContent {
+      text-align: center;
+      padding-top:0;
+      padding-right:20px;
+      padding-bottom:20px;
+      padding-left:20px;
+    }
+
+    .leftColumnContent img, 
+    .rightColumnContent img{
+        display:inline;
+        height:auto;
+        max-width:260px;
+    }
+
+    .promocode {
+      background-color: red;
+      color: #fff;
+      font-weight: bold;
+      display: inline-block;
+      padding: 1px 5px;
+    }
+
+    .blue-promocode {
+      background-color: blue;
     }
 
     /* Outline styles */
     @media only screen and (max-width: 599px) {
-      .one-up td[style*="padding: 0 20px 0 20px;"] {
+      .templateColumnContainer{
+        display:block !important;
+        width:100% !important;
+      }
+
+      .leftColumnContent img,
+      .centerColumnContent img, 
+      .rightColumnContent img{
+          display:block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      td[style*="padding: 10px 50px;"],
+      td[style="padding: 0 50px;"],
+      td.mobile-content {
         padding-left: 15px !important;
         padding-right: 15px !important;
       }
 
+      .three-up-centre td[style="padding: 0 20px 0 40px"],
+      .three-up-centre td[style="padding: 0 20px 0 20px"],
+      .three-up-centre td[style="padding: 0 40px 0 20px"] {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+
       .content-table {
+        width: 100% !important;
+      }
+
+      .two-up-button-centre--headline {
         width: 100% !important;
       }
 
@@ -156,6 +219,10 @@
         width: 100% !important;
       }
 
+      .two-up--articles > tbody > tr > td {
+        padding-bottom: 30px;
+      }
+
     }
   </style>
   
@@ -204,7 +271,7 @@
             <td align="center">
               <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
                 <tr>
-                  <td style="padding: 0; background-color: #ffffff; border: 1px solid #cccccc;" valign="top">
+                  <td style="padding: 0; background-color: #ffffff;" valign="top">
                   
 
                   <!-- One up -->
@@ -212,8 +279,8 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td align="center">
-      <a href="http://greenfarmparts.com" target="_blank">
-        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600; height: 202; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 202;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/b384e9c5-8585-48d7-936f-182e997a6263.png" alt="Smooth Out Your Ride">
+      <a href="https://greenfarmparts.com" target="_blank">
+        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: @@Widthpx; height: @@Heightpx; font-size: 18px; font-weight: bold; color: #ffffff; line-height: @@Heightpx;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/4f754fcc-8d16-43f1-a753-6e269760c470.jpg" alt="Fourth of July Sale - One Day Only!">
       </a>
     </td>
   </tr>
@@ -221,211 +288,107 @@
 
 <!-- /One up -->
 
-                  <!-- One up -->
-<div mc:repeatable mc:label="one_up" mc:hideable>
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="one-up">
-    <tr>
-      <td style="padding: 0;" align="center">
-        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-          <tr>
-            <td align="left">
-              <div mc:edit="one_up">
-                <table class="content-table" align="left" border="0" cellpadding="0" cellspacing="0" width="600">
-                  <tr>
-                    <td style="padding: 10px 50px;" bgcolor="#BCD331" align="left" valign="top">
-                      <!-- content -->
-                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                        <tr>
-                          <td align="center" style="padding: 0; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: normal; line-height: 24px;">
-                            <p style="font-size: 16px; line-height: 20px; margin: 0; padding: 0;">Save 20% off front tweels with purchase of ZGlide set.</p>
-                          </td>
-                        </tr>
-                      </table>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</div>
-<!-- /One up -->
-
-                  <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="@@bgc" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-
-                  <!-- Two up button centre -->
-<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  <tr>
-    <td style="padding: 0; border: 1px solid #cccccc;" bgcolor="#f0f0f0" align="center">
-      <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="100%">
-        <tr>
-          <td style="padding: 25px 25px 10px;" align="center" valign="top">
-            <table cellpadding="0" cellspacing="0" width="350" class="two-up-button-centre--headline">
-              <tbody>
-                <tr>
-                  <td align="center" style="padding-bottom: 20px;">
-                    <h2 style="margin: 0; padding: 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 20px; font-weight: bold; line-height: 24px;">Need Belts or Blades?</h2>
-                    <p style="margin: 0; padding: 0; color: #888888; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 16px;">Also throughout the month of June, save 15% on all belts and blades.</p>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <!-- Two column -->
-            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-                <td>
-                  <!-- content left -->
-                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="left">
-                    <tr>
-                      <td>
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tr>
-                            <td align="center">
-                              <a href="https://www.greenfarmparts.com/John-Deere-Belts-s/645.htm" target="_blank">
-                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/8f9dc9f5-1985-4f00-a624-4d4da51a3eec.png" alt="Can Koozie" width="150" height="150" border="0">
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding: 8px 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px;" align="center">
-                              <!-- Button -->
-                              <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
-                                <tbody>
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td width="50" valign="top" class="hide-on-mobile">
+                          <img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9525d66c-cf08-4a91-8f9f-e88db6fee634.jpg" alt="" style="display: block;">
+                        </td>
+                        <td width="500" align="center">
+                          
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #444444; padding: 25px 40px 15px;" class="mobile-content">
+                                <h1 style="font-size: 28px; line-height: 26px; text-transform: uppercase; margin: 0; margin-bottom: 10px; padding: 0;">Let Freedom Ring!</h1>
+                                <p style="font-size: 14px; margin: 0; padding: 0;">Don't miss your chance, offers are only good while supplies are in stock. Use promo codes in the boxes below.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 0 40px;" class="mobile-content">
+                                <hr>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 15px 40px 15px;" class="mobile-content">
+                                <p style="font-size: 16px; margin: 0; padding: 0;">Spend <span class="promocode blue-promocode">$50</span> at GFP, get one of these items for free.</p>
+                                <table cellpadding="0" cellspacing="0" width="100%" border="0">
                                   <tr>
-                                    <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Belts-s/645.htm" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop Belts</a></td>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Lawnmower-Keychain-TBE45321-p/tbe45321.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/88102d0f-c0e8-40b0-a5c1-63cabc683b22.jpg" alt="Keychain"></a>
+                                    </td>
+                                    <td align="center" style="padding: 10px 10px 0;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Telescopic-Magnetic-Pickup-Tool-TY26558-p/ty26558.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9319c5a8-6fbb-43b4-8845-8f04a0c39caf.jpg" alt="Magnetic Pick-up Tool"></a>
+                                    </td>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Mini-Magnetic-Parts-Tray-TY26557-p/ty26557.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/31544919-4586-4ef8-8532-09cb9ed12dc9.jpg" alt="Magnetic Parts Tray"></a>
+                                    </td>
                                   </tr>
-                                </tbody>
-                              </table>
-                              <!-- /Button -->
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                  <!-- /content left -->
-                  <!-- content right -->
-                  <table class="content-table" border="0" cellpadding="0" cellspacing="0" width="48%" align="right">
-                    <tr>
-                      <td>
-                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                          <tr>
-                            <td align="center">
-                              <a href="https://www.greenfarmparts.com/John-Deere-Lawn-Mower-Blades-s/636.htm" target="_blank">
-                                <img style="display: block; font-family: 'Open Sans', Helvetica, Arial, sans-serif; color: #333333; font-size: 14px; width: 150px; height: 150px;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/c7115f98-26bb-47f7-b67d-b16dacea837a.png" alt="Blades" width="150" height="150" border="0">
-                              </a>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td style="padding: 8px 0 0 0; color: #333333; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: bold; line-height: 24px;" align="center">
-                              <!-- Button -->
-                              <table border="0" cellpadding="0" cellspacing="0" class="mobile-button-wrap">
-                                <tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 15px 40px 15px;" class="mobile-content">
+                                <p style="font-size: 16px; margin: 0; padding: 0;">Spend <span class="promocode">$100</span> at GFP, get one of these items for free.</p>
+                                <table cellpadding="0" cellspacing="0" width="100%" border="0">
                                   <tr>
-                                    <td align="center"><a class="mobile-button" href="https://www.greenfarmparts.com/John-Deere-Lawn-Mower-Blades-s/636.htm" style="background-color: #BCD331; border-top: 15px solid #BCD331; border-right: 25px solid #BCD331; border-bottom: 15px solid #BCD331; border-left: 25px solid #BCD331; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; line-height: 16px; text-decoration: none;" target="_blank">Shop Blades</a></td>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Shop-Towel-Bucket-DRC4221-p/drc4221.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9fa184c6-6984-4b44-91c1-8692a9682dae.jpg" alt="Shop Towels"></a>
+                                    </td>
+                                    <td align="center" style="padding: 10px 10px 0;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Stainless-Steel-Multi-Tool-TY26825-p/ty26825.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/39c3889a-af76-4160-9bc5-6248a1ae777e.jpg" alt="Multi-Tool"></a>
+                                    </td>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Tool-Holster-TY25989-p/ty25989.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/550f5599-6f40-48ee-a602-2c27aa4a177f.jpg" alt="Tool Holster"></a>
+                                    </td>
                                   </tr>
-                                </tbody>
-                              </table>
-                              <!-- /Button -->
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 0 40px;" class="mobile-content">
+                                <hr>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #444444; padding: 15px 40px 20px;" class="mobile-content">
+                                <h2 style="font-size: 22px; text-transform: uppercase; margin: 0; margin-bottom: 5px; padding: 0;">Speaking of Free...</h2>
+                                <p style="font-size: 14px; margin: 0; padding: 0;">How about free shipping on <strong style="color: red;">ALL ORDERS</strong> placed on July 4th?! Big or small, it doesn’t matter, we’ll get it to you for free!</p>
+                                <!-- Button -->
+                                <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td align="center" style="padding-top: 15px;">
+                                      <a class="mobile-button" style="background-color: red; border-top: 8px solid red; border-right: 16px solid red; border-bottom: 8px solid red; border-left: 16px solid red; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 24px; text-decoration: none;" href="https://greenfarmparts.com" target="_blank">Shop GFP Now & Save</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- /Button -->
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                        <td width="50" valign="top" class="hide-on-mobile">
+                          <img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/2ba14a32-1bf7-426e-9b85-0a677220d2f8.jpg" alt="" style="display: block;">
+                        </td>
+                      </tr>
+
+                    </tbody>
                   </table>
-                  <!-- /content right -->
-                </td>
-              </tr>
-            </table>
-            <!-- /Two column -->
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="#f0f0f0" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 25px;" height="25">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<!-- /Two up button centre -->
-
-                  <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="@@bgc" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 30px;" height="30">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
-
+                  
                   <!-- One up -->
 
 <table border="0" cellpadding="0" cellspacing="0" width="100%">
   <tr>
     <td align="center">
-      <a href="https://www.greenfarmparts.com/ZGlide-Z900-ZTrak-Mower-Suspension-p/jdzg900.htm" target="_blank">
-        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: 600; height: 116; font-size: 18px; font-weight: bold; color: #ffffff; line-height: 116;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/00e83284-d1e4-4a82-8638-2b7356d4971e.png" alt="Save 20% on a set of front tweels - Click For More">
+      <a href="https://greenfarmparts.com" target="_blank">
+        <img mc:edit="email_header" mc:hideable mc:label="email_header" class="img-max" style="display: block; margin: 0; padding: 0; background-color: #BCD331; width: @@Widthpx; height: @@Heightpx; font-size: 18px; font-weight: bold; color: #ffffff; line-height: @@Heightpx;" src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/8908638d-07df-43a2-b015-540f6c03bffb.jpg" alt="Fourth of July Sale - One Day Only!">
       </a>
     </td>
   </tr>
 </table>
 
 <!-- /One up -->
+
                 </tr>
               </table>
             </td>
@@ -514,26 +477,6 @@ SPACER
 </table>
 <!-- /footer logo links -->
 
-        <!--
-=====================
-SPACER
-=====================
--->
-<div mc:repeatable mc:label="spacer" mc:hideable>
-  <div mc:edit="spacer">
-    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-      <tr>
-          <td bgcolor="@@bgc" class="spacer" style="font-size: 0; line-height: 0; padding: 0; margin: 0; height: 50px;" height="50">
-          </td>
-      </tr>
-  </table>
-  </div>
-</div>
-<!--
-=====================
-/SPACER
-=====================
--->
 
       </td>
     </tr>

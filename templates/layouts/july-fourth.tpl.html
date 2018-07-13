@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>*|MC:SUBJECT|*</title>
+  <meta http-equiv="Content-Type" content="text/html;" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,700" rel="stylesheet">
+
+  <style type="text/css">
+    /* CLIENT-SPECIFIC STYLES */
+    #outlook a { padding: 0; }
+    .ReadMsgBody { width: 100%; } .ExternalClass { width: 100%; }
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div, .ExternalClass * { line-height: 100%; }
+    body, table, td, a { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    img { -ms-interpolation-mode:bicubic; }
+    /* RESET STYLES */
+    body { height:100% !important; margin: 0 !important; padding: 0 !important; width: 100% !important; }
+    img { border: 0; height: auto; line-height: 100%; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; }
+    /* Remove margin on email wrapper in Android 4.4 KitKat */
+    /* See more at: https://blog.jmwhite.co.uk/2015/09/19/revealing-why-emails-appear-off-centre-in-android-4-4-kitkat/ */
+    div[style*="margin: 16px 0"] {margin:0 !important; font-size:100% !important;}
+
+    * {
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif !important;
+    }
+
+    hr {
+        background: transparent;
+        border: 0;
+        border-top: 1px solid #cccccc;
+    }
+
+    a {
+      color: #377D3D;
+    }
+
+    /* Remove ios blue links */
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    .hide-on-desktop {
+      display: none !important;
+      width: 0px !important;
+      height:  0px !important;
+      overflow: hidden !important;
+      line-height:  0px !important;
+      font-size: 0px !important;
+    }
+
+    .footer-utility-links {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    .footer-utility-links li {
+        margin-bottom: 2px;
+    }
+
+    .footer-utility-links a {
+        text-decoration: none;
+        color: #377D3D;
+    }
+
+    .footer-utility-links a:hover {
+        text-decoration: underline;
+    }
+
+    .hero-table-cell {
+      background-color: #377D3D;
+      background-image: url("https://greenfarmparts.com/v/vspfiles/images/email/order-confirmation--hero.jpg");
+    }
+
+    .order-details-table table td {
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+
+    .order-details-table table tr:first-child td {
+      border-bottom: 1px solid #cccccc;
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+
+    .hero-overlay-button-wrapper,
+    .mobile-button {
+      transition: all 250ms ease-in-out;
+    }
+
+    .hero-overlay-button-wrapper:hover,
+    .mobile-button:hover {
+      background-color: #ab0101 !important;
+      border-color: #ab0101 !important;
+    }
+
+    .templateColumnContainer{
+      width:200px;
+    }
+
+    .leftColumnContent,
+    .centerColumnContent,
+    .rightColumnContent {
+      text-align: center;
+      padding-top:0;
+      padding-right:20px;
+      padding-bottom:20px;
+      padding-left:20px;
+    }
+
+    .leftColumnContent img, 
+    .rightColumnContent img{
+        display:inline;
+        height:auto;
+        max-width:260px;
+    }
+
+    .promocode {
+      background-color: red;
+      color: #fff;
+      font-weight: bold;
+      display: inline-block;
+      padding: 1px 5px;
+    }
+
+    .blue-promocode {
+      background-color: blue;
+    }
+
+    /* Outline styles */
+    @media only screen and (max-width: 599px) {
+      .templateColumnContainer{
+        display:block !important;
+        width:100% !important;
+      }
+
+      .leftColumnContent img,
+      .centerColumnContent img, 
+      .rightColumnContent img{
+          display:block;
+          margin-left: auto;
+          margin-right: auto;
+      }
+
+      td[style*="padding: 10px 50px;"],
+      td[style="padding: 0 50px;"],
+      td.mobile-content {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+
+      .three-up-centre td[style="padding: 0 20px 0 40px"],
+      .three-up-centre td[style="padding: 0 20px 0 20px"],
+      .three-up-centre td[style="padding: 0 40px 0 20px"] {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+      }
+
+      .content-table {
+        width: 100% !important;
+      }
+
+      .two-up-button-centre--headline {
+        width: 100% !important;
+      }
+
+      img[class="img-max"]{
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      table[class="mobile-button-wrap"]{
+        margin: 0 auto;
+        width: 100% !important;
+      }
+
+      .hide-on-mobile {
+        display: none !important;
+      }
+
+      .hide-on-desktop {
+        display: block !important;
+        max-height:  none !important;
+        max-width: 100% !important;
+        line-height: 1.5 !important;
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      a[class="mobile-button"]{
+        width: 100% !important;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border: 0 !important;
+        box-sizing: border-box;
+      }
+
+      .mobile-align-center {
+        text-align: center !important;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .email-header .content-table td {
+        padding-top: 25px !important;
+      }
+
+      .hero-table-cell table td {
+        padding: 50px 25px !important;
+      }
+
+      .hero-overlay-button-wrapper {
+        width: 100% !important;
+      }
+
+      .two-up--articles > tbody > tr > td {
+        padding-bottom: 30px;
+      }
+
+    }
+  </style>
+  
+  <!--[if mso]>
+    <style type="text/css">
+      html, body, table, tbody, tr, td, div, p, a, h1, h2, h3, h4, h5, h6,  ul, li, font, span, strong {
+        font-family: Arial, sans-serif !important;
+      }
+    </style>
+  <![endif]-->
+
+</head>
+
+<body style="margin: 0 !important; padding: 0 !important; background-color: #f0f0f0;">
+
+<!-- hidden preheader text - Remember to change it! -->
+<div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;mso-hide:all;">
+  *|MC_PREVIEW_TEXT|*
+</div>
+
+<!-- Background -->
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td bgcolor="#f0f0f0" align="center">
+        
+        @@include('header/_header.html')
+        
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <tr>
+            <td align="center">
+              <table class="content-table" align="center" border="0" cellpadding="0" cellspacing="0" width="600">
+                <tr>
+                  <td style="padding: 0; background-color: #ffffff;" valign="top">
+                  
+
+                  @@include('one-up/_one-up--image-only.html', {
+                    "Link": "https://greenfarmparts.com",
+                    "Widthpxpx": "600",
+                    "Heightpxpx": "231",
+                    "Image": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/4f754fcc-8d16-43f1-a753-6e269760c470.jpg",
+                    "AltText": "Fourth of July Sale - One Day Only!"
+                  })
+
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                    <tbody>
+                      <tr>
+                        <td width="50" valign="top" class="hide-on-mobile">
+                          <img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9525d66c-cf08-4a91-8f9f-e88db6fee634.jpg" alt="" style="display: block;">
+                        </td>
+                        <td width="500" align="center">
+                          
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #444444; padding: 25px 40px 15px;" class="mobile-content">
+                                <h1 style="font-size: 28px; line-height: 26px; text-transform: uppercase; margin: 0; margin-bottom: 10px; padding: 0;">Let Freedom Ring!</h1>
+                                <p style="font-size: 14px; margin: 0; padding: 0;">Don't miss your chance, offers are only good while supplies are in stock. Use promo codes in the boxes below.</p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 0 40px;" class="mobile-content">
+                                <hr>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 15px 40px 15px;" class="mobile-content">
+                                <p style="font-size: 16px; margin: 0; padding: 0;">Spend <span class="promocode blue-promocode">$50</span> at GFP, get one of these items for free.</p>
+                                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                                  <tr>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Lawnmower-Keychain-TBE45321-p/tbe45321.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/88102d0f-c0e8-40b0-a5c1-63cabc683b22.jpg" alt="Keychain"></a>
+                                    </td>
+                                    <td align="center" style="padding: 10px 10px 0;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Telescopic-Magnetic-Pickup-Tool-TY26558-p/ty26558.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9319c5a8-6fbb-43b4-8845-8f04a0c39caf.jpg" alt="Magnetic Pick-up Tool"></a>
+                                    </td>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Mini-Magnetic-Parts-Tray-TY26557-p/ty26557.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/31544919-4586-4ef8-8532-09cb9ed12dc9.jpg" alt="Magnetic Parts Tray"></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 15px 40px 15px;" class="mobile-content">
+                                <p style="font-size: 16px; margin: 0; padding: 0;">Spend <span class="promocode">$100</span> at GFP, get one of these items for free.</p>
+                                <table cellpadding="0" cellspacing="0" width="100%" border="0">
+                                  <tr>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Shop-Towel-Bucket-DRC4221-p/drc4221.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/9fa184c6-6984-4b44-91c1-8692a9682dae.jpg" alt="Shop Towels"></a>
+                                    </td>
+                                    <td align="center" style="padding: 10px 10px 0;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Stainless-Steel-Multi-Tool-TY26825-p/ty26825.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/39c3889a-af76-4160-9bc5-6248a1ae777e.jpg" alt="Multi-Tool"></a>
+                                    </td>
+                                    <td align="center" style="padding-top: 10px;">
+                                      <a href="https://www.greenfarmparts.com/John-Deere-Tool-Holster-TY25989-p/ty25989.htm" target="_blank"><img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/550f5599-6f40-48ee-a602-2c27aa4a177f.jpg" alt="Tool Holster"></a>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 22px; color: #444444; padding: 0 40px;" class="mobile-content">
+                                <hr>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="center" style="font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; line-height: 20px; color: #444444; padding: 15px 40px 20px;" class="mobile-content">
+                                <h2 style="font-size: 22px; text-transform: uppercase; margin: 0; margin-bottom: 5px; padding: 0;">Speaking of Free...</h2>
+                                <p style="font-size: 14px; margin: 0; padding: 0;">How about free shipping on <strong style="color: red;">ALL ORDERS</strong> placed on July 4th?! Big or small, it doesn’t matter, we’ll get it to you for free!</p>
+                                <!-- Button -->
+                                <table class="mobile-button-wrap" border="0" cellspacing="0" cellpadding="0">
+                                  <tr>
+                                    <td align="center" style="padding-top: 15px;">
+                                      <a class="mobile-button" style="background-color: red; border-top: 8px solid red; border-right: 16px solid red; border-bottom: 8px solid red; border-left: 16px solid red; display: inline-block; color: #ffffff; font-family: 'Open Sans', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: bold; line-height: 24px; text-decoration: none;" href="https://greenfarmparts.com" target="_blank">Shop GFP Now & Save</a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                <!-- /Button -->
+                              </td>
+                            </tr>
+                          </table>
+
+                        </td>
+                        <td width="50" valign="top" class="hide-on-mobile">
+                          <img src="https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/2ba14a32-1bf7-426e-9b85-0a677220d2f8.jpg" alt="" style="display: block;">
+                        </td>
+                      </tr>
+
+                    </tbody>
+                  </table>
+                  
+                  @@include('one-up/_one-up--image-only.html', {
+                    "Link": "https://greenfarmparts.com",
+                    "Widthpxpx": "600",
+                    "Heightpxpx": "50",
+                    "Image": "https://gallery.mailchimp.com/c80372a35929a7b281b76c090/images/8908638d-07df-43a2-b015-540f6c03bffb.jpg",
+                    "AltText": "Fourth of July Sale - One Day Only!"
+                  })
+
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        @@include('footer/_footer-logo-links.html')
+
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
